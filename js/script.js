@@ -21,8 +21,18 @@ const months = [
   "December",
 ];
 
-let currentDate = new Date(revealDate);
+const newsArray = [
+  { date: "2019-02-13", info: "Silksong is revealed at the nintendo direct", type: "Yes", class: "" },
+  { date: "2019-04-23", info: "Silksong is revealed at the nintendo direct", type: "Yes", class: "right" },
+  { date: "2019-06-30", info: "Silksong is revealed at the nintendo direct", type: "Yes", class: "" },
+  { date: "2019-08-13", info: "Silksong is revealed at the nintendo direct", type: "Yes", class: "right" },
+];
+let newsDateArray = [];
+let newsTypeArray = [];
+
+let currentDate = new Date(new Date(revealDate).toLocaleString("en-US", { timeZone: "Australia/Sydney" }));
 let currentDaysSince;
+let news;
 
 console.log("Reveal Date: " + revealDate);
 console.log("Today Date: " + todayDate);
@@ -40,19 +50,68 @@ timelineWrapper.style.height = daysSinceReveal * 30 + "px";
 
 console.log("Days Since Reveal: " + daysSinceReveal);
 
+newsArray.forEach(function (news, index) {
+  let newsDate = new Date(new Date(news.date).toLocaleString("en-US", { timeZone: "Australia/Sydney" }));
+
+  newsDateArray[index] = newsDate;
+  newsTypeArray[index] = news.type;
+  let utc1 = Date.UTC(revealDate.getFullYear(), revealDate.getMonth(), revealDate.getDate());
+  let utc2 = Date.UTC(newsDate.getFullYear(), newsDate.getMonth(), newsDate.getDate());
+
+  // Calculate the time difference in milliseconds
+  let timeDiff = Math.abs(utc2 - utc1);
+
+  // Convert milliseconds to days
+  let daysSinceReveal = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+
+  let top = daysSinceReveal * 30;
+
+  $("#timeline-wrapper").append(
+    $(
+      '<div class="news ' +
+        news.class +
+        '" style="top: ' +
+        top +
+        'px;"><div class="news-info">' +
+        news.info +
+        '</div><div class="news-circle"></div><div class="news-date">' +
+        ("0" + newsDate.getDate()).slice(-2) +
+        " " +
+        months[newsDate.getMonth()] +
+        " " +
+        newsDate.getFullYear() +
+        "</div></div>"
+    )
+  );
+});
+
+console.log(newsDateArray);
+
 window.onscroll = function (e) {
-  let scroll = window.scrollY - 31;
-  console.log(scroll); // Value of scroll Y in px
+  let scroll = window.scrollY;
+  console.log(scroll);
   if (scroll > 0) {
+    news = "No";
     currentDaysSince = Math.floor(scroll / 30);
     currentDate = new Date(revealDate);
     currentDate.setDate(revealDate.getDate() + currentDaysSince);
+    newsDateArray.forEach(function (date, index) {
+      if (
+        date.getDate() == currentDate.getDate() &&
+        date.getMonth() == currentDate.getMonth() &&
+        date.getFullYear() == currentDate.getFullYear()
+      ) {
+        news = newsTypeArray[index];
+      }
+    });
   } else {
     currentDaysSince = 0;
     currentDate = new Date(revealDate);
+    news = "Yes";
   }
   console.log(currentDate);
   currentDay.innerHTML =
     ("0" + currentDate.getDate()).slice(-2) + " " + months[currentDate.getMonth()] + " " + currentDate.getFullYear();
   daysSince.innerHTML = currentDaysSince + " days since reveal";
+  newsStatus.innerHTML = news;
 };

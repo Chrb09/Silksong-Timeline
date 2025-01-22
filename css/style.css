@@ -93,7 +93,7 @@ button {
   display: flex;
   position: relative;
   flex-direction: column;
-  margin-bottom: calc(100vh - 8.25em);
+  margin-bottom: calc(100vh - 10em);
 }
 .timeline {
   background-color: #ce5f64;
