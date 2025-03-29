@@ -1,13 +1,32 @@
-const revealDate = new Date(new Date("2019-02-13").toLocaleString("en-US", { timeZone: "Australia/Sydney" }));
-const todayDate = new Date(new Date().toLocaleString("en-US", { timeZone: "Australia/Sydney" }));
-revealDate.setHours(0, 0, 0, 0);
-todayDate.setHours(0, 0, 0, 0);
+// Silksong reveal trailer date
+const revealDate = new Date(Date.UTC(2019, 1, 13)); // Month starts from 0 in JS
+// Current date
+const todayDate = new Date();
 
+// Reset hours to avoid timezone issues
+revealDate.setUTCHours(0, 0, 0, 0);
+todayDate.setUTCHours(0, 0, 0, 0);
+
+// HTML elements
 const timelineWrapper = document.getElementById("timeline-wrapper");
-const timeline = document.getElementById("timeline");
 const currentDay = document.getElementById("current-day");
 const daysSince = document.getElementById("days-since");
 const newsStatus = document.getElementById("news-status");
+const previous = document.getElementById("previous");
+const next = document.getElementById("next");
+
+// The news array
+const newsArray = [
+  { date: "2019-02-13", info: "Silksong is revealed at the Nintendo Direct", type: "Yes", number: "1" },
+  { date: "2019-04-23", info: "Another news drop about Silksong", type: "Yes", number: "2" },
+  { date: "2019-06-30", info: "More details emerge about Silksong", type: "Yes", number: "3" },
+  {
+    date: todayDate.toISOString().split("T")[0], // Gets YYYY-MM-DD
+    info: "Tomorrow for sure!",
+    type: "Maybe",
+    number: "4",
+  },
+];
 
 const months = [
   "January",
@@ -24,114 +43,87 @@ const months = [
   "December",
 ];
 
-const newsArray = [
-  { date: "2019-02-13", info: "Silksong is revealed at the nintendo direct", type: "Yes", class: "" },
-  { date: "2019-04-23", info: "Silksong is revealed at the nintendo direct", type: "Yes", class: "right" },
-  { date: "2019-06-30", info: "Silksong is revealed at the nintendo direct", type: "Yes", class: "" },
-  {
-    date:
-      todayDate.getFullYear() +
-      "-" +
-      String(todayDate.getMonth() + 1).padStart(2, "0") +
-      "-" +
-      String(todayDate.getDate()).padStart(2, "0"),
-    info: "Today",
-    type: "IDK",
-    class: "right",
-  },
-];
-let newsDateArray = [];
-let newsTypeArray = [];
+// Calculate days since reveal
+const daysSinceReveal = Math.ceil((todayDate - revealDate) / (1000 * 60 * 60 * 24));
 
-let currentDate = new Date(new Date(revealDate).toLocaleString("en-US", { timeZone: "Australia/Sydney" }));
-let currentDaysSince;
-let news;
+// Creating the timeline
+for (let i = 0; i <= daysSinceReveal; i++) {
+  let currentDate = new Date(revealDate);
+  currentDate.setUTCDate(revealDate.getUTCDate() + i);
 
-console.log("Reveal Date: " + revealDate);
-console.log("Today Date: " + todayDate);
+  const currentDateString = currentDate.toISOString().split("T")[0];
 
-let utc1 = Date.UTC(revealDate.getFullYear(), revealDate.getMonth(), revealDate.getDate());
-let utc2 = Date.UTC(todayDate.getFullYear(), todayDate.getMonth(), todayDate.getDate());
+  const newsItem = newsArray.find((news) => news.date === currentDateString);
 
-// Calculate the time difference in milliseconds
-let timeDiff = Math.abs(utc2 - utc1);
+  // Create elements using `document.createElement`
+  const dayDiv = document.createElement("div");
+  dayDiv.classList.add("day");
+  dayDiv.setAttribute("data-date", currentDateString);
+  dayDiv.setAttribute("data-sinceReveal", i);
+  dayDiv.setAttribute("data-news", "No");
 
-// Convert milliseconds to days
-let daysSinceReveal = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+  if (newsItem) {
+    dayDiv.classList.add("news");
+    dayDiv.setAttribute("data-news", newsItem.type);
+    dayDiv.setAttribute("data-newsCount", newsItem.number);
+    dayDiv.innerHTML = `<div class="news-circle"></div> ${newsItem.info}`;
+  }
 
-timelineWrapper.style.height = daysSinceReveal * 30 + "px";
-timeline.style.height = daysSinceReveal * 30 + "px";
+  timelineWrapper.appendChild(dayDiv);
+}
 
-console.log("Days Since Reveal: " + daysSinceReveal);
+let currentNews = 1;
 
-newsArray.forEach(function (news, index) {
-  let newsDate = new Date(new Date(news.date).toLocaleString("en-US", { timeZone: "Australia/Sydney" }));
-  newsDate.setHours(0, 0, 0, 0);
+window.addEventListener("scroll", () => {
+  const days = document.querySelectorAll(".day");
 
-  newsDateArray[index] = newsDate;
-  newsTypeArray[index] = news.type;
-  let utc1 = Date.UTC(revealDate.getFullYear(), revealDate.getMonth(), revealDate.getDate());
-  let utc2 = Date.UTC(newsDate.getFullYear(), newsDate.getMonth(), newsDate.getDate());
+  let closestDay = null;
+  let minDistance = Infinity;
+  const referenceOffset = 11 * 16; // 11rem to pixels
 
-  // Calculate the time difference in milliseconds
-  let timeDiff = Math.abs(utc2 - utc1);
+  days.forEach((day) => {
+    const rect = day.getBoundingClientRect();
+    const distance = Math.abs(rect.top - referenceOffset);
 
-  // Convert milliseconds to days
-  let daysSinceReveal = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+    if (distance < minDistance) {
+      minDistance = distance;
+      closestDay = day;
+    }
+  });
 
-  let top = daysSinceReveal * 30;
+  if (closestDay) {
+    // Get date from atribute
+    const activeDate = closestDay.getAttribute("data-date");
+    daysSince.textContent = closestDay.getAttribute("data-sinceReveal") + " days since reveal";
+    newsStatus.textContent = closestDay.getAttribute("data-news");
+    // Updates the display
+    currentDay.textContent =
+      activeDate.split("-")[2] + " " + months[activeDate.split("-")[1] - 1] + " " + activeDate.split("-")[0];
 
-  $("#timeline-wrapper").append(
-    $(
-      '<div class="news ' +
-        news.class +
-        '" style="top: ' +
-        top +
-        'px;"><div class="news-info">' +
-        news.info +
-        '</div><div class="news-circle"></div><div class="news-date">' +
-        ("0" + newsDate.getDate()).slice(-2) +
-        " " +
-        months[newsDate.getMonth()] +
-        " " +
-        newsDate.getFullYear() +
-        "</div></div>"
-    )
-  );
+    if (closestDay.getAttribute("data-newsCount")) {
+      currentNews = parseInt(closestDay.getAttribute("data-newsCount"));
+    }
+  }
 });
 
-console.log(newsDateArray);
+const newsDaysCount = [...document.querySelectorAll(".day.news")].length;
 
-window.onscroll = function (e) {
-  let scroll = window.scrollY;
-  console.log(scroll);
-  if (scroll > 0) {
-    currentDaysSince = Math.floor(scroll / 30);
-    currentDate = new Date(revealDate);
-    currentDate.setDate(revealDate.getDate() + currentDaysSince);
-    currentDate.setHours(0, 0, 0, 0);
-    if (currentDate >= todayDate) {
-      currentDate = new Date(todayDate);
-      currentDaysSince = daysSinceReveal;
-    }
-    news = "No";
-    newsDateArray.forEach(function (date, index) {
-      if (
-        date.getDate() == currentDate.getDate() &&
-        date.getMonth() == currentDate.getMonth() &&
-        date.getFullYear() == currentDate.getFullYear()
-      ) {
-        news = newsTypeArray[index];
-      }
-    });
-  } else {
-    currentDaysSince = 0;
-    currentDate = new Date(revealDate);
-    news = "Yes";
+previous.addEventListener("click", () => {
+  if (currentNews - 1 != 0) {
+    currentNews = currentNews - 1;
   }
-  console.log(currentDate);
-  currentDay.innerHTML =
-    ("0" + currentDate.getDate()).slice(-2) + " " + months[currentDate.getMonth()] + " " + currentDate.getFullYear();
-  daysSince.innerHTML = currentDaysSince + " days since reveal";
-  newsStatus.innerHTML = news;
-};
+  $('[data-newsCount="' + currentNews + '"]')
+    .get(0)
+    .scrollIntoView({ behavior: "smooth" });
+  console.log(currentNews);
+});
+
+next.addEventListener("click", () => {
+  if (currentNews != newsDaysCount) {
+    currentNews = currentNews + 1;
+  }
+  $('[data-newsCount="' + currentNews + '"]')
+    .get(0)
+    .scrollIntoView({ behavior: "smooth" });
+  console.log(currentNews);
+});
