@@ -1,7 +1,10 @@
 const revealDate = new Date(new Date("2019-02-13").toLocaleString("en-US", { timeZone: "Australia/Sydney" }));
 const todayDate = new Date(new Date().toLocaleString("en-US", { timeZone: "Australia/Sydney" }));
+revealDate.setHours(0, 0, 0, 0);
+todayDate.setHours(0, 0, 0, 0);
 
 const timelineWrapper = document.getElementById("timeline-wrapper");
+const timeline = document.getElementById("timeline");
 const currentDay = document.getElementById("current-day");
 const daysSince = document.getElementById("days-since");
 const newsStatus = document.getElementById("news-status");
@@ -25,7 +28,17 @@ const newsArray = [
   { date: "2019-02-13", info: "Silksong is revealed at the nintendo direct", type: "Yes", class: "" },
   { date: "2019-04-23", info: "Silksong is revealed at the nintendo direct", type: "Yes", class: "right" },
   { date: "2019-06-30", info: "Silksong is revealed at the nintendo direct", type: "Yes", class: "" },
-  { date: "2019-08-13", info: "Silksong is revealed at the nintendo direct", type: "Yes", class: "right" },
+  {
+    date:
+      todayDate.getFullYear() +
+      "-" +
+      String(todayDate.getMonth() + 1).padStart(2, "0") +
+      "-" +
+      String(todayDate.getDate()).padStart(2, "0"),
+    info: "Today",
+    type: "IDK",
+    class: "right",
+  },
 ];
 let newsDateArray = [];
 let newsTypeArray = [];
@@ -47,11 +60,13 @@ let timeDiff = Math.abs(utc2 - utc1);
 let daysSinceReveal = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
 
 timelineWrapper.style.height = daysSinceReveal * 30 + "px";
+timeline.style.height = daysSinceReveal * 30 + "px";
 
 console.log("Days Since Reveal: " + daysSinceReveal);
 
 newsArray.forEach(function (news, index) {
   let newsDate = new Date(new Date(news.date).toLocaleString("en-US", { timeZone: "Australia/Sydney" }));
+  newsDate.setHours(0, 0, 0, 0);
 
   newsDateArray[index] = newsDate;
   newsTypeArray[index] = news.type;
@@ -91,10 +106,15 @@ window.onscroll = function (e) {
   let scroll = window.scrollY;
   console.log(scroll);
   if (scroll > 0) {
-    news = "No";
     currentDaysSince = Math.floor(scroll / 30);
     currentDate = new Date(revealDate);
     currentDate.setDate(revealDate.getDate() + currentDaysSince);
+    currentDate.setHours(0, 0, 0, 0);
+    if (currentDate >= todayDate) {
+      currentDate = new Date(todayDate);
+      currentDaysSince = daysSinceReveal;
+    }
+    news = "No";
     newsDateArray.forEach(function (date, index) {
       if (
         date.getDate() == currentDate.getDate() &&
