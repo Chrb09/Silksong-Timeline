@@ -17,14 +17,18 @@ const next = document.getElementById("next");
 
 // The news array
 const newsArray = [
-  { date: "2019-02-13", info: "Silksong is revealed at the Nintendo Direct", type: "Yes", number: "1" },
-  { date: "2019-04-23", info: "Another news drop about Silksong", type: "Yes", number: "2" },
-  { date: "2019-06-30", info: "More details emerge about Silksong", type: "Yes", number: "3" },
+  {
+    date: "2019-02-13",
+    title: "Silksong is revealed at the Nintendo Direct",
+    youtube: "https://www.youtube.com/watch?v=yQxwbZsL14Y",
+    type: "Yes",
+    number: "1",
+  },
   {
     date: todayDate.toISOString().split("T")[0], // Gets YYYY-MM-DD
-    info: "Tomorrow for sure!",
+    title: "Tomorrow for sure!",
     type: "Maybe",
-    number: "4",
+    number: "2",
   },
 ];
 
@@ -64,9 +68,25 @@ for (let i = 0; i <= daysSinceReveal; i++) {
 
   if (newsItem) {
     dayDiv.classList.add("news");
+    if (newsItem.type == "Yes") {
+      dayDiv.classList.add("green");
+    } else if (newsItem.type == "Kinda") {
+      dayDiv.classList.add("yellow");
+    }
     dayDiv.setAttribute("data-news", newsItem.type);
     dayDiv.setAttribute("data-newsCount", newsItem.number);
-    dayDiv.innerHTML = `<div class="news-circle"></div> ${newsItem.info}`;
+
+    let formattedDate =
+      newsItem.date.split("-")[2] + " " + months[newsItem.date.split("-")[1] - 1] + " " + newsItem.date.split("-")[0];
+    dayDiv.innerHTML = `<div class="news-circle"></div> <b> ${formattedDate} </b> - ${newsItem.title}
+    `;
+    if (newsItem.youtube) {
+      /*
+      const youtubeDiv = document.createElement("a");
+      youtubeDiv.setAttribute("src", newsItem.youtube);
+      dayDiv.appendChild(youtubeDiv);
+      */
+    }
   }
 
   timelineWrapper.appendChild(dayDiv);
