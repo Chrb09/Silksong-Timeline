@@ -5,7 +5,7 @@
   --rose: #ce5f64;
   --magenta: #a72a60;
   --green: #2aa754;
-  --yellow: #e7b048;
+  --yellow: #fa9e25;
 }
 @font-face {
   font-family: Inter;
@@ -111,7 +111,7 @@ button {
 }
 .timeline {
   background-color: var(--rose);
-  height: calc(100% - 1em);
+  height: calc(100% - 3em);
   position: absolute;
   top: 0;
   transform: translate(-50%, 0);
@@ -122,10 +122,43 @@ button {
 .day {
   height: 30px;
 }
+.news:not(.news ~ .news) {
+  margin-top: 0;
+}
 .news {
   position: relative;
   height: auto;
   scroll-margin-top: 11rem;
+  margin-top: 2em;
+}
+
+.newsImages {
+  margin-top: 0.75em;
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+.newsImg {
+  height: 25rem;
+  border-radius: 0.5em;
+}
+a {
+  color: var(--gray);
+}
+.linkLogo {
+  aspect-ratio: 1 / 1;
+  width: 1em;
+}
+.linkDiv {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.newsLinks {
+  margin-top: 0.75em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
 }
 .green {
   --red: var(--green);
@@ -144,8 +177,4 @@ button {
   top: 0;
   left: -1.5em;
   background-color: var(--red);
-}
-iframe {
-  margin-top: 1em;
-  border-radius: 1rem;
 }
