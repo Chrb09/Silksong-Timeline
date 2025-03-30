@@ -146,6 +146,136 @@ const newsArray = [
     number: "12",
   },
   {
+    date: "2019-12-13",
+    title: "Team Cherry posts Holiday Sign off",
+    images: ["img/13/blog.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/teamcherry.png" class="linkLogo"><a href="https://www.teamcherry.com.au/blog/post-e3-wrap-silksong-systems-update">TEAM CHERRY HOLIDAY SIGN OFF</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=2613s">Daily Silksong News -400</a></div>',
+    ],
+    type: "Yes",
+    number: "13",
+  },
+  {
+    date: "2020-01-20",
+    title: 'Nintendo "claims" that Silksong will release within the next fiscal year (again)',
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=2924s">Daily Silksong News -356</a></div>',
+    ],
+    type: "Maybe",
+    number: "14",
+  },
+  {
+    date: "2020-01-26",
+    title: "u/big_boi878 'Seth' talks to Team Cherry as his wish",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=2980s">Daily Silksong News -356 (again?)</a></div>',
+    ],
+    type: "Maybe",
+    number: "15",
+  },
+  {
+    date: "2020-01-31",
+    title: "u/big_boi878 'Seth' talks to Team Cherry again",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=3040s">Daily Silksong News -351 </a></div>',
+    ],
+    type: "Maybe",
+    number: "16",
+  },
+  {
+    date: "2020-02-04",
+    title: "u/big_boi878 'Seth' is offered chance to create a character for Silksong",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=3086s">Daily Silksong News -347 </a></div>',
+    ],
+    type: "Maybe",
+    number: "17",
+  },
+  {
+    date: "2020-04-02",
+    title: "u/big_boi878 'Seth' claims that his boss character is named Seth and he will be featured soon",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=3510s&pp=0gcJCTEAlc8ueATH">Daily Silksong News -289 </a></div>',
+    ],
+    type: "Maybe",
+    number: "18",
+  },
+  {
+    date: "2020-06-15",
+    title: "Leth posts a zip file on the Hollow Knight discord with info about a new npc called 'Huntress'",
+    images: ["img/19/riddle.webp"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/discord.png" class="linkLogo"><a href="https://discord.com/channels/283467363729408000/586931790208434203/722196291592912906">Discord Message</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=4016s">Daily Silksong News -214 </a></div>',
+    ],
+    type: "Yes",
+    number: "19",
+  },
+  {
+    date: "2020-06-22",
+    title: "Leth posts a zip file on the Hollow Knight discord with info about a new npc called 'Grindle'",
+    images: ["img/20/riddle.webp"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/discord.png" class="linkLogo"><a href="https://discord.com/channels/283467363729408000/586931790208434203/724730813887021158">Discord Message</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=4093s">Daily Silksong News -207 </a></div>',
+    ],
+    type: "Yes",
+    number: "20",
+  },
+  {
+    date: "2020-06-29",
+    title: "Leth posts a zip file on the Hollow Knight discord with info about a new npc called 'The Caravan'",
+    images: ["img/21/riddle.webp"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/discord.png" class="linkLogo"><a href="https://discord.com/channels/283467363729408000/586931790208434203/727297949201334282">Discord Message</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=4163s">Daily Silksong News -200 </a></div>',
+    ],
+    type: "Yes",
+    number: "21",
+  },
+  {
+    date: "2020-07-05",
+    title: "Leth posts a zip file on the Hollow Knight discord with new info about 'Seth'",
+    images: ["img/22/riddle.webp"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/discord.png" class="linkLogo"><a href="https://discord.com/channels/283467363729408000/586931790208434203/729804624638509164">Discord Message</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=4216s">Daily Silksong News -194 </a></div>',
+    ],
+    type: "Yes",
+    number: "22",
+  },
+  {
+    date: "2020-08-21",
+    title: "Nintendo Indie World shared an infographic about indio games coming to the switch with the Silksong logo",
+    images: ["https://pbs.twimg.com/media/Ef8xhkNWoAMlwqv?format=jpg&name=medium"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=4558s">Daily Silksong News -147 </a></div>',
+    ],
+    type: "Maybe",
+    number: "23",
+  },
+  {
+    date: "2020-11-30",
+    title: "Team Cherry replied to kickstarter about the lack of updates",
+    images: ["img/24/comment.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/kickstarter.png" class="linkLogo"><a href="https://www.kickstarter.com/projects/11662585/hollow-knight/comments?comment=Q29tbWVudC0zMDgwMDAyMg%3D%3D">Kickstarter comment</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=5131s">Daily Silksong News -46 </a></div>',
+    ],
+    type: "Kinda",
+    number: "24",
+  },
+  {
+    date: "2020-12-13",
+    title: "Edge magazine teases new issue with what appears to be hornets head",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=5251s">Daily Silksong News -33 </a></div>',
+    ],
+    type: "Maybe",
+    number: "25",
+  },
+  {
     date: todayDate.toISOString().split("T")[0], // Gets YYYY-MM-DD
     title: "Tomorrow for sure!",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
