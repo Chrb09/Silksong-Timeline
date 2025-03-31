@@ -268,12 +268,189 @@ const newsArray = [
   },
   {
     date: "2020-12-13",
-    title: "Edge magazine teases new issue with what appears to be hornets head",
+    title: "Edge Magazine teases new issue with what appears to be Hornets head",
+    images: ["img/25/tweet.jpg"],
     links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/edgeonline/status/1338072669527420928"> @edgeonline tweet </a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=5251s">Daily Silksong News -33 </a></div>',
     ],
     type: "Maybe",
     number: "25",
+  },
+  {
+    date: "2020-12-24",
+    title: "New issue of Edge Magazine is confirmed to have new information about Silksong",
+    images: ["https://i.redd.it/puklju4x75761.jpg", "img/26/cover2.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=5330s">Daily Silksong News -22 </a></div>',
+    ],
+    type: "Yes",
+    number: "26",
+  },
+  {
+    date: "2020-12-31",
+    title: "New issue of Edge Magazine is released",
+    images: ["img/27/screenshot1.jpg", "img/27/screenshot2.jpg", "img/27/screenshot3.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/edgeonline/status/1344588834231693313"> @edgeonline tweet </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=5397s">Daily Silksong News -15 </a></div>',
+    ],
+    type: "Yes",
+    number: "27",
+  },
+  {
+    date: "2021-01-16",
+    title: "Daily Silksong News YT channel is created",
+    images: ["img/28/thumbnail.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=7SnMKTy_k1w">Daily Silksong News 1 </a></div>',
+    ],
+    type: "Other",
+    number: "28",
+  },
+  {
+    date: "2021-09-14",
+    title: "Nvidia leaks alleged release date of february fifteenth 2022 ",
+    type: "Maybe",
+    number: "29",
+  },
+  {
+    date: "2022-01-23",
+    title: "A R/HollowKnight moderator states that there's no imminent release of Silksong",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/HollowKnight/comments/sau9ii/rhollowknight_announcement_we_have_no_expectation/"> Reddit post </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=weR-Fprw6dQ">Daily Silksong News 373 </a></div>',
+    ],
+    type: "No, but",
+    number: "30",
+  },
+  {
+    date: "2022-02-12",
+    title: "Team Cherry states that they're still working on the game",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/pcgamer.jpg" class="linkLogo"><a href="https://www.pcgamer.com/hollow-knight-silksong-everything-we-know/"> PC Gamer article </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Doib0u8KdjI">Daily Silksong News 393 </a></div>',
+    ],
+    type: "No, but",
+    number: "31",
+  },
+  {
+    date: "2022-03-15",
+    title: "Makoto Koji (Hornets voice actor) finished voicing Silksong",
+    images: ["img/32/instagram.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=XnGASjuTTQw">Daily Silksong News 424 </a></div>',
+    ],
+    type: "Kinda",
+    number: "32",
+  },
+  {
+    date: "2022-04-30",
+    title: "New quote from Team Cherry regarding Silksong win on the Unity Awards 2021",
+    images: ["img/33/quote.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/unity.png" class="linkLogo"><a href="https://unity.com/awards/2021"> The Unity Awards 2021 </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=a0RWCOVWM78">Daily Silksong News 470 </a></div>',
+    ],
+    type: "Kinda",
+    number: "33",
+  },
+  {
+    date: "2022-06-12",
+    title: "Silksong finally has a new trailer on the Xbox Games Showcase",
+    images: ["img/34/thumbnail.jpg", "img/34/print.jpg", "img/34/print2.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=JSfuFlhsxZY">Hollow Knight: Silksong - Xbox Game Pass Reveal Trailer - Xbox & Bethesda Games Showcase 2022 </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=4oRMNZ_i2tI">Daily Silksong News 513 </a></div>',
+    ],
+    type: "Yes",
+    number: "34",
+  },
+  {
+    date: "2022-06-13",
+    title:
+      "A new clip with Hornet fighting the Last Judge posted by Xbox on twitter and confirmation of an 12 month release window",
+    images: ["img/35/tweet.jpg", "img/35/judge.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/Xbox/status/1536065644516483073">Xbox new footage tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/Xbox/status/1536034468460261376">Xbox 12 month release tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=h3OJro0ufxY">Daily Silksong News 514 </a></div>',
+    ],
+    type: "Kinda",
+    number: "35",
+  },
+  {
+    date: "2022-06-14",
+    title: "Couple new Silksong clips from the Xbox Games Showcase Extended",
+    images: ["img/36/print1.jpg", "img/36/print2.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Rl3Z0-_Zblg">ID@Xbox - Announce Trailer - Xbox Games Showcase Extended 2022  </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=oORVxMCLI28">Daily Silksong News 515 </a></div>',
+    ],
+    type: "Yes",
+    number: "36",
+  },
+  {
+    date: "2022-06-16",
+    title: "More new seconds of Silksong footage by Xbox but the video is privated later",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=rQYwf9acBrw">Daily Silksong News 517 </a></div>',
+    ],
+    type: "Kinda",
+    number: "37",
+  },
+  {
+    date: "2022-09-16",
+    title: "Silksong confirmed for PS4 and PS5",
+    images: ["img/38/tweet.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/PlayStation/status/1570797280063627264">Playstation announcement tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=lQU9AAU-MwE">Daily Silksong News 609 </a></div>',
+    ],
+    type: "Yes",
+    number: "38",
+  },
+  {
+    date: "2022-09-17",
+    title: "New Silksong screenshots from the PlayStation Store",
+    images: ["img/39/print.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Rodsb_gAVCU">Daily Silksong News 610 </a></div>',
+    ],
+    type: "Yes",
+    number: "39",
+  },
+  {
+    date: "2022-10-29",
+    title: "Named Silksong Screenshots found on the Xbox Wire Website",
+    images: ["img/40/print.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=4yYBbbNlFxo">Daily Silksong News 652 </a></div>',
+    ],
+    type: "Kinda old",
+    number: "40",
+  },
+  {
+    date: "2023-02-02",
+    title: "Silksong eShop Metadata, Xbox Blogposts and New Trademarks",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Iyq0GW9KtDc">Daily Silksong News 748 </a></div>',
+    ],
+    type: "Maybe",
+    number: "41",
+  },
+  {
+    date: "2023-05-10",
+    title: "Silksong Delay Confirmed by Leth on Twitter",
+    images: [
+      "https://preview.redd.it/everything-silksong-timeline-2019-2025-v0-g8j7xa7zdole1.png?width=644&format=png&auto=webp&s=74f256caac1b17ae0ca605575456e081fe4b545c",
+    ],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1656106351184199680">Leths tweet </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=dDacZ8u3Obk">Daily Silksong News 845 </a></div>',
+    ],
+    type: "Yes",
+    number: "42",
   },
   {
     date: todayDate.toISOString().split("T")[0], // Gets YYYY-MM-DD
@@ -283,7 +460,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "13",
+    number: "",
   },
 ];
 
@@ -325,8 +502,10 @@ for (let i = 0; i <= daysSinceReveal; i++) {
     dayDiv.classList.add("news");
     if (newsItem.type == "Yes") {
       dayDiv.classList.add("green");
-    } else if (newsItem.type == "Kinda" || newsItem.type == "Maybe") {
+    } else if (newsItem.type == "Kinda" || newsItem.type == "Maybe" || newsItem.type == "Kinda old") {
       dayDiv.classList.add("yellow");
+    } else if (newsItem.type == "Other") {
+      dayDiv.classList.add("blue");
     }
     dayDiv.setAttribute("data-news", newsItem.type);
     dayDiv.setAttribute("data-newsCount", newsItem.number);
@@ -358,6 +537,10 @@ for (let i = 0; i <= daysSinceReveal; i++) {
 
       dayDiv.appendChild(linksDiv);
     }
+  } else if (currentDate.getDate() == "01") {
+    dayDiv.classList.add("month");
+    dayDiv.innerHTML =
+      "<b>" + months[currentDate.getMonth()] + " " + currentDate.getFullYear() + '</b> <div class="hr"></div>';
   }
 
   timelineWrapper.appendChild(dayDiv);

@@ -6,6 +6,7 @@
   --magenta: #a72a60;
   --green: #2aa754;
   --yellow: #fa9e25;
+  --blue: #5e67ec;
 }
 @font-face {
   font-family: Inter;
@@ -165,6 +166,19 @@ a {
 }
 .yellow {
   --red: var(--yellow);
+}
+.blue {
+  --red: var(--blue);
+}
+.month {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 4em;
+}
+.hr {
+  border-top: 2px solid var(--rose);
+  width: 100%;
 }
 .news::after {
   content: "";
