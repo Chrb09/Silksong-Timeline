@@ -14,6 +14,8 @@ const daysSince = document.getElementById("days-since");
 const newsStatus = document.getElementById("news-status");
 const previous = document.getElementById("previous");
 const next = document.getElementById("next");
+const first = document.getElementById("first");
+const last = document.getElementById("last");
 
 // The news array
 const newsArray = [
@@ -422,7 +424,7 @@ const newsArray = [
   },
   {
     date: "2022-10-29",
-    title: "Named Silksong Screenshots found on the Xbox Wire Website",
+    title: "Named Silksong screenshots found on the Xbox Wire Website",
     images: ["img/40/print.jpg"],
     links: [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=4yYBbbNlFxo">Daily Silksong News 652 </a></div>',
@@ -441,7 +443,7 @@ const newsArray = [
   },
   {
     date: "2023-05-10",
-    title: "Silksong Delay Confirmed by Leth on Twitter",
+    title: "Silksong delay confirmed by Leth on Twitter",
     images: [
       "https://preview.redd.it/everything-silksong-timeline-2019-2025-v0-g8j7xa7zdole1.png?width=644&format=png&auto=webp&s=74f256caac1b17ae0ca605575456e081fe4b545c",
     ],
@@ -453,6 +455,87 @@ const newsArray = [
     number: "42",
   },
   {
+    date: "2023-06-29",
+    title: "Namedrop for Hornet familiar tool 'Cogfly'",
+    images: ["img/43/nendoroid.webp"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=5D9i9fX9SGE">Daily Silksong News 895 </a></div>',
+    ],
+    type: "Kinda",
+    number: "43",
+  },
+  {
+    date: "2023-07-22",
+    title: "Ari Gibson answers some fan questions at AVCon",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=D9m-oBgr-bQ">Daily Silksong News 918 </a></div>',
+    ],
+    type: "Kinda",
+    number: "44",
+  },
+  {
+    date: "2023-09-22",
+    title: "Silksong Steam page gets a minor update",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=MXwgo-JHYPQ">Daily Silksong News 980 </a></div>',
+    ],
+    type: "Kinda",
+    number: "45",
+  },
+  {
+    date: "2023-12-13",
+    title: "Silksong trailer metadata extracted containing clip names",
+    images: ["img/46/coralking.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=CduKctEyPKE">Daily Silksong News 1062 </a></div>',
+    ],
+    type: "Yes",
+    number: "46",
+  },
+  {
+    date: "2024-03-17",
+    title: "Silksong is said to definitely release before Crowsworn ",
+    images: ["img/47/print.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1bhhpf4/i_was_at_day_of_the_devs_today_i_found_someone/">Reddit post </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=ODnG4vjoOuE">Daily Silksong News 1158 </a></div>',
+    ],
+    type: "Kinda",
+    number: "47",
+  },
+  {
+    date: "2024-04-02",
+    title: "Silksong gets new Microsoft Store page",
+    images: ["img/48/print.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1774895893520466278">Leths tweet </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=CbmtBrOSmlE">Daily Silksong News 1173 </a></div>',
+    ],
+    type: "Kinda",
+    number: "48",
+  },
+  {
+    date: "2024-04-04",
+    title: "Silksong gets several new age ratings",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1buhzj0/sorry_to_burst_your_bubbles_but_all_the/">Reddit post explaining the situation </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=SBzSijb7_y8">Daily Silksong News 1175 </a></div>',
+    ],
+    type: "Maybe",
+    number: "49",
+  },
+  {
+    date: "2024-06-07",
+    title: "Silksong Hints for event appearance",
+    images: ["img/50/tweet.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/eXtas1stv/status/1798739884628439375">eXtas1s tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=ARpy-EhHDCs">Daily Silksong News 1238 </a></div>',
+    ],
+    type: "Maybe",
+    number: "50",
+  },
+  {
     date: todayDate.toISOString().split("T")[0], // Gets YYYY-MM-DD
     title: "Tomorrow for sure!",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -460,7 +543,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "",
+    number: "51",
   },
 ];
 
@@ -600,4 +683,16 @@ next.addEventListener("click", () => {
     .get(0)
     .scrollIntoView({ behavior: "smooth" });
   console.log(currentNews);
+});
+
+first.addEventListener("click", () => {
+  currentNews = 1;
+  $('[data-newsCount="1"]').get(0).scrollIntoView({ behavior: "smooth" });
+});
+
+last.addEventListener("click", () => {
+  currentNews = newsDaysCount - 1;
+  $('[data-newsCount="' + (newsDaysCount - 1) + '"]')
+    .get(0)
+    .scrollIntoView({ behavior: "smooth" });
 });

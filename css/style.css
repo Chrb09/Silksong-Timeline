@@ -108,7 +108,7 @@ button {
   display: flex;
   position: relative;
   flex-direction: column;
-  margin-bottom: 60px;
+  margin-bottom: 5rem;
 }
 .timeline {
   background-color: var(--rose);
@@ -191,4 +191,14 @@ a {
   top: 0;
   left: -1.5em;
   background-color: var(--red);
+}
+.stats {
+  padding-inline: 4em;
+}
+.credits {
+  padding-inline: 4em;
+}
+h1 {
+  font-size: 2em;
+  color: var(--red);
 }
