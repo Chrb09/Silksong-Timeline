@@ -58,7 +58,7 @@ b {
 }
 .logo-wrapper {
   position: relative;
-  width: 10em;
+  height: 6.5em;
 }
 .silksong_logo {
   width: 100%;
@@ -193,10 +193,11 @@ a {
 }
 .stats {
   padding-inline: 4em;
-  margin-bottom: 5rem;
+  margin-bottom: 1em;
 }
 .credits {
   padding-inline: 4em;
+  margin-bottom: 3em;
 }
 h1 {
   font-size: 2em;

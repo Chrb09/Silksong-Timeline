@@ -743,8 +743,8 @@ first.addEventListener("click", () => {
 });
 
 last.addEventListener("click", () => {
-  currentNews = newsDaysCount - 1;
-  $('[data-newsCount="' + (newsDaysCount - 1) + '"]')
+  currentNews = newsDaysCount;
+  $('[data-newsCount="' + newsDaysCount + '"]')
     .get(0)
     .scrollIntoView({ behavior: "smooth" });
 });
