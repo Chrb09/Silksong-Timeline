@@ -2,6 +2,7 @@
 const revealDate = new Date(Date.UTC(2019, 1, 14)); // Month starts from 0 in JS
 // Current date
 const todayDate = new Date();
+const todayDateString = todayDate.toISOString().split("T")[0];
 
 // Reset hours to avoid timezone issues
 revealDate.setUTCHours(0, 0, 0, 0);
@@ -589,14 +590,14 @@ const newsArray = [
     number: "55",
   },
   {
-    date: todayDate.toISOString().split("T")[0], // Gets YYYY-MM-DD
+    date: todayDateString, // Gets YYYY-MM-DD
     title: "Today",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
     links: [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "No",
-    number: "51",
+    number: "56",
   },
 ];
 
@@ -646,8 +647,7 @@ for (let i = 0; i <= daysSinceReveal; i++) {
     dayDiv.setAttribute("data-news", newsItem.type);
     dayDiv.setAttribute("data-newsCount", newsItem.number);
 
-    let formattedDate =
-      newsItem.date.split("-")[2] + " " + months[newsItem.date.split("-")[1] - 1] + " " + newsItem.date.split("-")[0];
+    let formattedDate = formatStringDate(newsItem.date);
     dayDiv.innerHTML = `<div class="news-circle"></div> <b> ${formattedDate} </b> - ${newsItem.title}
     `;
     if (newsItem.images) {
@@ -707,8 +707,7 @@ window.addEventListener("scroll", () => {
     daysSince.textContent = closestDay.getAttribute("data-sinceReveal") + " days since reveal";
     newsStatus.textContent = closestDay.getAttribute("data-news");
     // Updates the display
-    currentDay.textContent =
-      activeDate.split("-")[2] + " " + months[activeDate.split("-")[1] - 1] + " " + activeDate.split("-")[0];
+    currentDay.textContent = formatStringDate(activeDate);
 
     if (closestDay.getAttribute("data-newsCount")) {
       currentNews = parseInt(closestDay.getAttribute("data-newsCount"));
@@ -749,3 +748,66 @@ last.addEventListener("click", () => {
     .get(0)
     .scrollIntoView({ behavior: "smooth" });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const actualNewsCount = newsDaysCount - 5;
+  const formattedTodayDate = formatStringDate(todayDateString);
+  const avgDaysBetweenNews = Math.floor(daysSinceReveal / actualNewsCount);
+  const newsChance = ((actualNewsCount / daysSinceReveal) * 100).toFixed(2);
+  const lastNews = newsArray[newsDaysCount - 2];
+  const nextNewsDate = new Date(lastNews.date);
+  nextNewsDate.setDate(nextNewsDate.getDate() + avgDaysBetweenNews);
+  const daysUntilNextNews = Math.ceil((nextNewsDate - todayDate) / (1000 * 60 * 60 * 24));
+
+  const hollowknightRevealDate = new Date(Date.UTC(2014, 10, 15));
+  hollowknightRevealDate.setUTCHours(0, 0, 0, 0);
+  const hollowknightReleaseDate = new Date(Date.UTC(2017, 1, 24));
+  hollowknightReleaseDate.setUTCHours(0, 0, 0, 0);
+  const daysHollowKnightTook = Math.ceil((hollowknightReleaseDate - hollowknightRevealDate) / (1000 * 60 * 60 * 24));
+  const hollowKnightSilksongRatio = ((daysSinceReveal / daysHollowKnightTook) * 100).toFixed(2);
+
+  const silksongReleaseWindowDate = new Date(Date.UTC(2022, 5, 13));
+  silksongReleaseWindowDate.setUTCHours(0, 0, 0, 0);
+  const daysSinceSilksongReleaseWindow = Math.ceil((todayDate - silksongReleaseWindowDate) / (1000 * 60 * 60 * 24));
+  const silksongReleaseWindowRatio = ((daysSinceSilksongReleaseWindow / 365) * 100).toFixed(2);
+
+  const typeCount = {};
+
+  newsArray.forEach((news) => {
+    typeCount[news.type] = (typeCount[news.type] || 0) + 1;
+  });
+
+  console.log(typeCount);
+  // Display results
+  document.getElementById("stats").innerHTML = `
+      <h1>Stats - ${formattedTodayDate}</h1>
+      <h3>News Predictions</h3>
+      <p>Silksong was revealed <b>${daysSinceReveal} days ago</b>.</p>
+      <p>Out of the <b>${daysSinceReveal} days</b>, there has been news <b>${actualNewsCount} times.</b></p>
+      <p>On average, we have had news every <b>${avgDaysBetweenNews} days.</b></p>
+      <p>Any given day has a <b>${newsChance}%</b> chance of having news.</p>
+      <p>Last time we got news was on <b>${formatStringDate(lastNews.date)}</b>, "${lastNews.title}"</p>
+      <p>We were or will be due for news on <b>${formatStringDate(
+        nextNewsDate.toISOString().split("T")[0]
+      )}, ${daysUntilNextNews} days</b> from now.</p>
+
+      <h3>Comparisons</h3>
+      <p>Hollow Knight took <b>${daysHollowKnightTook} days</b> to release after its reveal</p>
+      <p>Silksong has taken roughly <b>${hollowKnightSilksongRatio}%</b> as long as Hollow Knight did.</p>
+      <p>The one year Silksong release window started <b>${daysSinceSilksongReleaseWindow} days ago</b>.</p>
+      <p><b>${silksongReleaseWindowRatio}%</b> of the release window has passed.</p>
+      
+      <h3>News Types</h3>
+      <p><b class="green">Yes</b> -> ${typeCount.Yes} times</p>
+      <p><b class="yellow">Maybe</b> -> ${typeCount.Maybe} times</p>
+      <p><b class="yellow">Kinda</b> -> ${typeCount.Kinda} times</p>
+      <p><b class="red">No, but</b> -> ${typeCount["No, but"]} times</p>
+      <p><b class="red">No</b> -> ${typeCount.No} times</p>
+      <p><b class="yellow">Kinda old</b> -> ${typeCount["Kinda old"]} time</p>
+      <p><b class="blue">Other</b> -> ${typeCount.Other} time</p>
+  `;
+});
+
+function formatStringDate(dateString) {
+  return dateString.split("-")[2] + " " + months[dateString.split("-")[1] - 1] + " " + dateString.split("-")[0];
+}

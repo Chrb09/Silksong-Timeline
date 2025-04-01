@@ -132,7 +132,6 @@ button {
   scroll-margin-top: 11rem;
   margin-top: 2em;
 }
-
 .newsImages {
   margin-top: 0.75em;
   display: flex;
@@ -140,7 +139,7 @@ button {
   flex-wrap: wrap;
 }
 .newsImg {
-  height: 25rem;
+  height: 22.5rem;
   border-radius: 0.5em;
 }
 a {
@@ -194,11 +193,23 @@ a {
 }
 .stats {
   padding-inline: 4em;
+  margin-bottom: 5rem;
 }
 .credits {
   padding-inline: 4em;
 }
 h1 {
   font-size: 2em;
+  margin-bottom: 0;
   color: var(--red);
+}
+h3 {
+  color: var(--red);
+  margin-top: 1em;
+  margin-bottom: 0.15em;
+}
+.stats-row {
+  display: flex;
+  gap: 0.5em;
+  flex-direction: row;
 }
