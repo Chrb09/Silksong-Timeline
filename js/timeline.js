@@ -536,13 +536,66 @@ const newsArray = [
     number: "50",
   },
   {
+    date: "2025-01-16",
+    title: "William Pellen tweets something that some consider to be an ARG",
+    images: ["img/51/tweet.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/everydruidwaswr/status/1879751713621725206">William Pellen tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=FA9H3snFrSQ">Daily Silksong News 1462 </a></div>',
+    ],
+    type: "Maybe",
+    number: "51",
+  },
+  {
+    date: "2025-01-18",
+    title: "Leth confirms that there is no ARG and it was just a coincidence",
+    images: ["img/52/discord.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/discord.png" class="linkLogo"><a href="https://discord.com/channels/283467363729408000/586931790208434203/1330100156518891571">Leth message </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=O9NnGdrNZQE">Daily Silksong News 1462 </a></div>',
+    ],
+    type: "Maybe",
+    number: "52",
+  },
+  {
+    date: "2025-01-23",
+    title:
+      "Some user on Reddit claims to be a Team Cherry VA says that a 2025 release is likely (this was not regarded by many)",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=EHJbRWBd3K4">Daily Silksong News 1469 </a></div>',
+    ],
+    type: "No",
+    number: "53",
+  },
+  {
+    date: "2025-03-18",
+    title: "Xbox hints about Silksong again in new ID@Xbox article",
+    images: ["img/54/print.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=R56ol_rp18I">Daily Silksong News 1523 </a></div>',
+    ],
+    type: "Maybe",
+    number: "54",
+  },
+  {
+    date: "2025-03-24",
+    title:
+      "Biggest Silksong Steam page update in years including copyright update, new library images and NVIDIA GeForce Now entry",
+    images: ["img/55/steamdb.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=i9LY67e14Oo">Daily Silksong News 1529 </a></div>',
+    ],
+    type: "Kinda",
+    number: "55",
+  },
+  {
     date: todayDate.toISOString().split("T")[0], // Gets YYYY-MM-DD
-    title: "Tomorrow for sure!",
+    title: "Today",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
     links: [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
-    type: "Maybe",
+    type: "No",
     number: "51",
   },
 ];
