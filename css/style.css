@@ -314,7 +314,11 @@ h3 {
   header {
     height: auto;
   }
-  .nav-2 {
-    display: none;
+  .nav-container {
+    gap: 0.4em;
+  }
+  button {
+    padding-inline: 0.75em;
+    border-radius: 0.5em;
   }
 }
