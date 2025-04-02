@@ -40,17 +40,26 @@ iframe {
 }
 header {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   width: 100%;
   height: 8.25em;
-  justify-content: space-between;
   top: 0px;
+  z-index: 4;
+  box-shadow: 0px -6px 33px 8px var(--magenta);
+  background-color: var(--red);
+}
+.header-container {
+  display: flex;
+  width: 100%;
+  max-width: 1580px;
+  height: 8.25em;
+  justify-content: space-between;
   align-items: center;
   z-index: 5;
   padding-inline: 5em;
-  box-shadow: 0px -6px 33px 8px var(--magenta);
   color: var(--white);
-  background-color: var(--red);
   padding-block: 0.75em;
 }
 b {
@@ -82,6 +91,11 @@ b {
   gap: 2rem;
   align-items: center;
 }
+.nav-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
 button {
   background: var(--white);
   outline-color: var(--white);
@@ -109,6 +123,8 @@ button {
   position: relative;
   flex-direction: column;
   margin-bottom: 5rem;
+  max-width: 1580px;
+  margin-inline: auto;
 }
 .timeline {
   background-color: var(--rose);
@@ -131,6 +147,7 @@ button {
   height: auto;
   scroll-margin-top: 11rem;
   margin-top: 2em;
+  padding-right: 2em;
 }
 .newsImages {
   margin-top: 0.75em;
@@ -213,4 +230,91 @@ h3 {
   display: flex;
   gap: 0.5em;
   flex-direction: row;
+}
+
+@media (max-width: 1180px) {
+  .header-container {
+    justify-content: center;
+  }
+  .logo-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 10em;
+    text-align: center;
+    box-shadow: none;
+  }
+  .header-container {
+    padding-block: 0;
+    height: 10em;
+  }
+  .current-day {
+    width: 100%;
+  }
+  .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header-info {
+    flex-direction: column;
+    gap: 0.4em;
+  }
+  .nav,
+  .news-header {
+    gap: 0.2em;
+  }
+
+  .timeline-wrapper {
+    margin-top: 11em;
+  }
+  .news {
+    scroll-margin-top: 11em;
+  }
+  .newsImg {
+    height: 100%;
+    max-height: 22.5rem;
+    border-radius: 0.5em;
+  }
+}
+
+@media (max-width: 640px) {
+  .timeline {
+    left: 1em;
+  }
+  .timeline-wrapper {
+    padding-left: 2.5em;
+    padding-right: 1em;
+  }
+  .header-container {
+    padding-inline: 1em;
+  }
+  .stats {
+    padding-inline: 1.5em;
+  }
+  .credits {
+    padding-inline: 1.5em;
+  }
+  .day {
+    height: 30px;
+  }
+  .news {
+    height: auto;
+  }
+  .nav-container {
+    gap: 1em;
+  }
+  .month {
+    padding-right: 1em;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    height: auto;
+  }
+  .nav-2 {
+    display: none;
+  }
 }
