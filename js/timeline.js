@@ -590,6 +590,16 @@ const newsArray = [
     number: "55",
   },
   {
+    date: "2025-04-02",
+    title: "Silksong is shown with new clips on the nintendo switch 2 direct",
+    images: ["img/56/nintendo.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=DXUmjX7DsP8">Nintendo Switch 2 Direct </a></div>',
+    ],
+    type: "Yes",
+    number: "56",
+  },
+  {
     date: todayDateString, // Gets YYYY-MM-DD
     title: "Today",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -597,7 +607,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "No",
-    number: "56",
+    number: "57",
   },
 ];
 
