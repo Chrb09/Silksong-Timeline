@@ -591,10 +591,12 @@ const newsArray = [
   },
   {
     date: "2025-04-02",
-    title: "Silksong is shown with new clips on the nintendo switch 2 direct",
-    images: ["img/56/nintendo.jpg"],
+    title: "Silksong 2025 release confirmed with new clips on the nintendo switch 2 direct",
+    images: ["img/56/nintendo.jpg", "img/56/tweet.png"],
     links: [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=DXUmjX7DsP8">Nintendo Switch 2 Direct </a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/NintendoEurope/status/1907430913148944627">Nintendo Europe Tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=-3QECuK0_tE">Daily Silksong News 1538 </a></div>',
     ],
     type: "Yes",
     number: "56",
@@ -791,6 +793,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Display results
   document.getElementById("stats").innerHTML = `
       <h1>Stats - ${formattedTodayDate}</h1>
+       <h3>Release Predictions</h3>
       <h3>News Predictions</h3>
       <p>Silksong was revealed <b>${daysSinceReveal} days ago</b>.</p>
       <p>Out of the <b>${daysSinceReveal} days</b>, there has been news <b>${actualNewsCount} times.</b></p>
