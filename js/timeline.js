@@ -2,11 +2,17 @@
 const revealDate = new Date(Date.UTC(2019, 1, 14)); // Month starts from 0 in JS
 // Current date
 const todayDate = new Date();
-const todayDateString = todayDate.toISOString().split("T")[0];
 
 // Reset hours to avoid timezone issues
 revealDate.setUTCHours(0, 0, 0, 0);
 todayDate.setUTCHours(0, 0, 0, 0);
+
+const tomorrowDate = new Date();
+tomorrowDate.setUTCDate(todayDate.getUTCDate() + 1);
+tomorrowDate.setUTCHours(0, 0, 0, 0);
+
+const todayDateString = todayDate.toISOString().split("T")[0];
+const tomorrowDateString = tomorrowDate.toISOString().split("T")[0];
 
 // HTML elements
 const timelineWrapper = document.getElementById("timeline-wrapper");
@@ -591,24 +597,26 @@ const newsArray = [
   },
   {
     date: "2025-04-02",
-    title: "Silksong 2025 release confirmed with new clips on the nintendo switch 2 direct",
-    images: ["img/56/nintendo.jpg", "img/56/tweet.png"],
+    title:
+      "Silksong 2025 release confirmed with new clips on the nintendo switch 2 direct, there was also a new press kit with new images about Silksong",
+    images: ["img/56/banner.jpg", "img/56/tweet.png"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=DXUmjX7DsP8">Nintendo Switch 2 Direct </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=VrTVeYm4iIM&t=2986s">Nintendo Switch 2 Direct </a></div>',
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/NintendoEurope/status/1907430913148944627">Nintendo Europe Tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=-Y22HB7Mn5U">BIG Hollow Knight: Silksong News! Nintendo secretly slipped new assets to press</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=-3QECuK0_tE">Daily Silksong News 1538 </a></div>',
     ],
     type: "Yes",
     number: "56",
   },
   {
-    date: todayDateString, // Gets YYYY-MM-DD
-    title: "Today",
+    date: tomorrowDateString, // Gets YYYY-MM-DD
+    title: "Tomorrow",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
     links: [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
-    type: "No",
+    type: "Maybe",
     number: "57",
   },
 ];
@@ -629,7 +637,7 @@ const months = [
 ];
 
 // Calculate days since reveal
-const daysSinceReveal = Math.ceil((todayDate - revealDate) / (1000 * 60 * 60 * 24));
+const daysSinceReveal = Math.ceil((tomorrowDate - revealDate) / (1000 * 60 * 60 * 24));
 
 // Creating the timeline
 for (let i = 0; i <= daysSinceReveal; i++) {
@@ -755,17 +763,24 @@ first.addEventListener("click", () => {
 });
 
 last.addEventListener("click", () => {
-  currentNews = newsDaysCount;
-  $('[data-newsCount="' + newsDaysCount + '"]')
+  currentNews = newsDaysCount - 1;
+  $('[data-newsCount="' + (newsDaysCount - 1) + '"]')
     .get(0)
     .scrollIntoView({ behavior: "smooth" });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const maxReleaseDate = new Date(Date.UTC(2025, 11, 31));
+  maxReleaseDate.setUTCHours(0, 0, 0, 0);
+  const maxDaysUntilRelease = Math.ceil((maxReleaseDate - todayDate) / (1000 * 60 * 60 * 24));
+  const chanceOfSilksongTomorrow = ((1 / maxDaysUntilRelease) * 100).toFixed(2);
+  const chanceOfSilksongNextMonth = ((30 / maxDaysUntilRelease) * 100).toFixed(2);
+
+  const daysSinceRevealToday = daysSinceReveal - 1;
   const actualNewsCount = newsDaysCount - 5;
   const formattedTodayDate = formatStringDate(todayDateString);
-  const avgDaysBetweenNews = Math.floor(daysSinceReveal / actualNewsCount);
-  const newsChance = ((actualNewsCount / daysSinceReveal) * 100).toFixed(2);
+  const avgDaysBetweenNews = Math.floor(daysSinceRevealToday / actualNewsCount);
+  const newsChance = ((actualNewsCount / daysSinceRevealToday) * 100).toFixed(2);
   const lastNews = newsArray[newsDaysCount - 2];
   const nextNewsDate = new Date(lastNews.date);
   nextNewsDate.setDate(nextNewsDate.getDate() + avgDaysBetweenNews);
@@ -776,7 +791,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const hollowknightReleaseDate = new Date(Date.UTC(2017, 1, 24));
   hollowknightReleaseDate.setUTCHours(0, 0, 0, 0);
   const daysHollowKnightTook = Math.ceil((hollowknightReleaseDate - hollowknightRevealDate) / (1000 * 60 * 60 * 24));
-  const hollowKnightSilksongRatio = ((daysSinceReveal / daysHollowKnightTook) * 100).toFixed(2);
+  const hollowKnightSilksongRatio = ((daysSinceRevealToday / daysHollowKnightTook) * 100).toFixed(2);
 
   const silksongReleaseWindowDate = new Date(Date.UTC(2022, 5, 13));
   silksongReleaseWindowDate.setUTCHours(0, 0, 0, 0);
@@ -784,6 +799,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const silksongReleaseWindowRatio = ((daysSinceSilksongReleaseWindow / 365) * 100).toFixed(2);
 
   const typeCount = {};
+
+  const newsByMonth = {};
+  newsArray.forEach((news) => {
+    const month = new Date(news.date).toISOString().slice(5, 7); // "YYYY-MM"
+    newsByMonth[month] = (newsByMonth[month] || 0) + 1;
+  });
+
+  const mostActiveMonth = Object.entries(newsByMonth).reduce((max, current) => (current[1] > max[1] ? current : max));
 
   newsArray.forEach((news) => {
     typeCount[news.type] = (typeCount[news.type] || 0) + 1;
@@ -793,22 +816,31 @@ document.addEventListener("DOMContentLoaded", function () {
   // Display results
   document.getElementById("stats").innerHTML = `
       <h1>Stats - ${formattedTodayDate}</h1>
-       <h3>Release Predictions</h3>
+
+      <h3>Release Predictions</h3>
+      <p>There's a maximum of <b>${maxDaysUntilRelease} days</b> until Silksong releases.</p>
+      <p>That's approximately <b>${(maxDaysUntilRelease / 30.42).toFixed(2)} months</b>.</p>
+      <p>There's a <b>${chanceOfSilksongTomorrow}%</b> that Silksong releases tomorrow.</p>
+      <p>There's a <b>${chanceOfSilksongNextMonth}%</b> that Silksong releases on the next 30 days.</p>
+
       <h3>News Predictions</h3>
-      <p>Silksong was revealed <b>${daysSinceReveal} days ago</b>.</p>
-      <p>Out of the <b>${daysSinceReveal} days</b>, there has been news <b>${actualNewsCount} times.</b></p>
+      <p>Silksong was revealed <b>${daysSinceRevealToday} days ago</b>.</p>
+      <p>There has been news <b>${actualNewsCount} times</b> since then.</p>
+      <p>The most active month for news is <b>${months[mostActiveMonth[0] - 1]}</b> with <b>${
+    mostActiveMonth[1]
+  } </b> news events.</p>
       <p>On average, we have had news every <b>${avgDaysBetweenNews} days.</b></p>
       <p>Any given day has a <b>${newsChance}%</b> chance of having news.</p>
       <p>Last time we got news was on <b>${formatStringDate(lastNews.date)}</b>, "${lastNews.title}"</p>
       <p>We were or will be due for news on <b>${formatStringDate(
         nextNewsDate.toISOString().split("T")[0]
-      )}, ${daysUntilNextNews} days</b> from now.</p>
+      )}</b> (${daysUntilNextNews} days from now)</p>
 
       <h3>Comparisons</h3>
       <p>Hollow Knight took <b>${daysHollowKnightTook} days</b> to release after its reveal</p>
       <p>Silksong has taken roughly <b>${hollowKnightSilksongRatio}%</b> as long as Hollow Knight did.</p>
-      <p>The one year Silksong release window started <b>${daysSinceSilksongReleaseWindow} days ago</b>.</p>
-      <p><b>${silksongReleaseWindowRatio}%</b> of the release window has passed.</p>
+      <p>The old one year Silksong release window started <b>${daysSinceSilksongReleaseWindow} days ago</b>.</p>
+      <p><b>${silksongReleaseWindowRatio}%</b> of that release window has passed.</p>
       
       <h3>News Types</h3>
       <p><b class="green">Yes</b> -> ${typeCount.Yes} times</p>

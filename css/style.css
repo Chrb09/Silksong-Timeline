@@ -128,7 +128,7 @@ button {
 }
 .timeline {
   background-color: var(--rose);
-  height: calc(100% - 3em);
+  height: 100%;
   position: absolute;
   top: 0;
   transform: translate(-50%, 0);
@@ -148,6 +148,18 @@ button {
   scroll-margin-top: 11rem;
   margin-top: 2em;
   padding-right: 2em;
+  z-index: 3;
+}
+.news:last-child::before {
+  content: "";
+  position: absolute;
+  width: 5em;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translate(-100%);
+  background-color: var(--white);
+  z-index: 2;
 }
 .newsImages {
   margin-top: 0.75em;
@@ -207,6 +219,7 @@ a {
   top: 0;
   left: -1.5em;
   background-color: var(--red);
+  z-index: 5;
 }
 .stats {
   padding-inline: 4em;
