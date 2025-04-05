@@ -603,8 +603,8 @@ const newsArray = [
     links: [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=VrTVeYm4iIM&t=2986s">Nintendo Switch 2 Direct </a></div>',
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/NintendoEurope/status/1907430913148944627">Nintendo Europe Tweet</a></div>',
-      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=-Y22HB7Mn5U">BIG Hollow Knight: Silksong News! Nintendo secretly slipped new assets to press</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=-3QECuK0_tE">Daily Silksong News 1538 </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=J1M5rKEKN2Q">Daily Silksong News 1539 </a></div>',
     ],
     type: "Yes",
     number: "56",
@@ -775,6 +775,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const maxDaysUntilRelease = Math.ceil((maxReleaseDate - todayDate) / (1000 * 60 * 60 * 24));
   const chanceOfSilksongTomorrow = ((1 / maxDaysUntilRelease) * 100).toFixed(2);
   const chanceOfSilksongNextMonth = ((30 / maxDaysUntilRelease) * 100).toFixed(2);
+  const switchTwoDate = new Date(Date.UTC(2025, 5, 5));
+  switchTwoDate.setUTCHours(0, 0, 0, 0);
+  const daysUntilSwitchTwo = Math.ceil((switchTwoDate - todayDate) / (1000 * 60 * 60 * 24));
 
   const daysSinceRevealToday = daysSinceReveal - 1;
   const actualNewsCount = newsDaysCount - 5;
@@ -820,6 +823,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <h3>Release Predictions</h3>
       <p>There's a maximum of <b>${maxDaysUntilRelease} days</b> until Silksong releases.</p>
       <p>That's approximately <b>${(maxDaysUntilRelease / 30.42).toFixed(2)} months</b>.</p>
+       <p>The Nintendo Switch Two will release in <b>${daysUntilSwitchTwo} days.</b> </p>
       <p>There's a <b>${chanceOfSilksongTomorrow}%</b> that Silksong releases tomorrow.</p>
       <p>There's a <b>${chanceOfSilksongNextMonth}%</b> that Silksong releases on the next 30 days.</p>
 
