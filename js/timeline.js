@@ -515,7 +515,7 @@ const newsArray = [
     title: "Silksong gets new Microsoft Store page",
     images: ["img/48/print.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1774895893520466278">Leths tweet </a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1774895893520466278">Leth tweet </a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=CbmtBrOSmlE">Daily Silksong News 1173 </a></div>',
     ],
     type: "Kinda",
@@ -615,10 +615,23 @@ const newsArray = [
     images: ["img/57/print1.jpg", "img/57/print2.jpg"],
     links: [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://fixupx.com/mossbag69/status/1909249997696086495">Mossbag Tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://store-jp.nintendo.com/item/software/D70010000096731">eShop Japan Silksong page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=ObCRErMU9e4">Daily Silksong News 1543 </a></div>',
     ],
     type: "Yes",
     number: "57",
+  },
+  {
+    date: "2025-04-08",
+    title: "Silksong confirmed in Switch 1 & 2, and Silksong hinted at on ACMI Game Worlds exhibition on september",
+    images: ["img/58/tweet.jpg", "img/58/print.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1909395467945099502">Leth Tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://www.acmi.net.au/whats-on/game-worlds/">Game Worlds website</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Sf1SgcVm6mk">Daily Silksong News 1544 </a></div>',
+    ],
+    type: "Kinda",
+    number: "58",
   },
   {
     date: tomorrowDateString, // Gets YYYY-MM-DD
@@ -628,7 +641,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "58",
+    number: "59",
   },
 ];
 
