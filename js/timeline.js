@@ -35,6 +35,7 @@ const newsArray = [
     ],
     links: [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=yQxwbZsL14Y">Hollow Knight: Silksong - Announcement Trailer - Nintendo Switch</a></div>',
+      '<div class="linkDiv"><img src="img/logos/kickstarter.png" class="linkLogo"><a href="https://www.kickstarter.com/projects/11662585/hollow-knight/posts/2416131">Silksong announcement on KickStarter</a></div>',
       '<div class="linkDiv"><img src="img/logos/teamcherry.png" class="linkLogo"><a href="https://hollowknightsilksong.com/">Hollow Knight: Silksong Website</a></div>',
       '<div class="linkDiv"><img src="img/logos/teamcherry.png" class="linkLogo"><a href="https://www.teamcherry.com.au/blog/hollow-knight-silksong-revealed">Hollow Knight: Silksong Blog Post</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Gv6CRPqkpuU&t=3s&pp=0gcJCb8Ag7Wk3p_U">Team Cherry Silksong QnA</a></div>',
@@ -99,6 +100,7 @@ const newsArray = [
       "https://preview.redd.it/everything-silksong-timeline-2019-2025-v0-i930yd1btnle1.png?width=642&format=png&auto=webp&s=a96797eaf6a33aac05a84441f2b760e4eead62b2",
     ],
     links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/TeamCherryGames/status/1138668903893164033">Team Cherry tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=1169s">Daily Silksong News -584</a></div>',
     ],
     type: "Yes",
@@ -140,6 +142,7 @@ const newsArray = [
     title: "Silksong Demo playable in Pax Australia announced",
     images: ["img/11/twitter.jpg"],
     links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/TeamCherryGames/status/1182098459278467073">Team Cherry tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=2159s">Daily Silksong News -464</a></div>',
     ],
     type: "Yes",
@@ -149,6 +152,7 @@ const newsArray = [
     date: "2019-10-28",
     title: "Silksong Steam page updated with new assets",
     links: [
+      '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=2316s">Daily Silksong News -428</a></div>',
     ],
     type: "Kinda",
@@ -259,6 +263,7 @@ const newsArray = [
     title: "Nintendo Indie World shared an infographic about indio games coming to the switch with the Silksong logo",
     images: ["https://pbs.twimg.com/media/Ef8xhkNWoAMlwqv?format=jpg&name=medium"],
     links: [
+      '<div class="linkDiv"><img src="img/logos/twtter.png" class="linkLogo"><a href="https://x.com/NintendoUK/status/1296809703230582785">Nintendo UK Tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=4558s">Daily Silksong News -147 </a></div>',
     ],
     type: "Maybe",
@@ -348,6 +353,7 @@ const newsArray = [
     title: "Makoto Koji (Hornets voice actor) finished voicing Silksong",
     images: ["img/32/instagram.jpg"],
     links: [
+      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://www.instagram.com/p/CbEZIEtrWu5/c/17951635072691639/r/17994866737434504/?img_index=1">Makoto Koji comment</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=XnGASjuTTQw">Daily Silksong News 424 </a></div>',
     ],
     type: "Kinda",
@@ -424,6 +430,7 @@ const newsArray = [
     title: "New Silksong screenshots from the PlayStation Store",
     images: ["img/39/print.jpg"],
     links: [
+      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://store.playstation.com/pt-br/concept/10005908/">Silksong PlayStation Store page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Rodsb_gAVCU">Daily Silksong News 610 </a></div>',
     ],
     type: "Yes",
@@ -466,6 +473,7 @@ const newsArray = [
     title: "Namedrop for Hornet familiar tool 'Cogfly'",
     images: ["img/43/nendoroid.webp"],
     links: [
+      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://www.goodsmile.info/en/product/14581/Nendoroid+Hornet.html">Good Smile Nendoroid Hornet</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=5D9i9fX9SGE">Daily Silksong News 895 </a></div>',
     ],
     type: "Kinda",
@@ -484,6 +492,7 @@ const newsArray = [
     date: "2023-09-22",
     title: "Silksong Steam page gets a minor update",
     links: [
+      '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=MXwgo-JHYPQ">Daily Silksong News 980 </a></div>',
     ],
     type: "Kinda",
@@ -579,6 +588,7 @@ const newsArray = [
     title: "Xbox hints about Silksong again in new ID@Xbox article",
     images: ["img/54/print.jpg"],
     links: [
+      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://news.xbox.com/en-us/2025/03/18/idxbox-developers-finding-success-with-xbox/">Xbox article</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=R56ol_rp18I">Daily Silksong News 1523 </a></div>',
     ],
     type: "Maybe",
@@ -590,6 +600,7 @@ const newsArray = [
       "Biggest Silksong Steam page update in years including copyright update, new library images and NVIDIA GeForce Now entry",
     images: ["img/55/steamdb.jpg"],
     links: [
+      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://steamdb.info/app/1030300/history/">SteamDB page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=i9LY67e14Oo">Daily Silksong News 1529 </a></div>',
     ],
     type: "Kinda",
