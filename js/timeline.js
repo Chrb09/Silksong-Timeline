@@ -353,7 +353,7 @@ const newsArray = [
     title: "Makoto Koji (Hornets voice actor) finished voicing Silksong",
     images: ["img/32/instagram.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://www.instagram.com/p/CbEZIEtrWu5/c/17951635072691639/r/17994866737434504/?img_index=1">Makoto Koji comment</a></div>',
+      '<div class="linkDiv"><img src="img/logos/instagram.png" class="linkLogo"><a href="https://www.instagram.com/p/CbEZIEtrWu5/c/17951635072691639/r/17994866737434504/?img_index=1">Makoto Koji comment</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=XnGASjuTTQw">Daily Silksong News 424 </a></div>',
     ],
     type: "Kinda",
@@ -430,7 +430,7 @@ const newsArray = [
     title: "New Silksong screenshots from the PlayStation Store",
     images: ["img/39/print.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://store.playstation.com/pt-br/concept/10005908/">Silksong PlayStation Store page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/psstore.png" class="linkLogo"><a href="https://store.playstation.com/pt-br/concept/10005908/">Silksong PlayStation Store page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Rodsb_gAVCU">Daily Silksong News 610 </a></div>',
     ],
     type: "Yes",
@@ -473,7 +473,7 @@ const newsArray = [
     title: "Namedrop for Hornet familiar tool 'Cogfly'",
     images: ["img/43/nendoroid.webp"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://www.goodsmile.info/en/product/14581/Nendoroid+Hornet.html">Good Smile Nendoroid Hornet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/nenroid.png" class="linkLogo"><a href="https://www.goodsmile.info/en/product/14581/Nendoroid+Hornet.html">Good Smile Nendoroid Hornet</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=5D9i9fX9SGE">Daily Silksong News 895 </a></div>',
     ],
     type: "Kinda",
@@ -588,7 +588,7 @@ const newsArray = [
     title: "Xbox hints about Silksong again in new ID@Xbox article",
     images: ["img/54/print.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://news.xbox.com/en-us/2025/03/18/idxbox-developers-finding-success-with-xbox/">Xbox article</a></div>',
+      '<div class="linkDiv"><img src="img/logos/xbox.png" class="linkLogo"><a href="https://news.xbox.com/en-us/2025/03/18/idxbox-developers-finding-success-with-xbox/">Xbox article</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=R56ol_rp18I">Daily Silksong News 1523 </a></div>',
     ],
     type: "Maybe",
@@ -600,7 +600,7 @@ const newsArray = [
       "Biggest Silksong Steam page update in years including copyright update, new library images and NVIDIA GeForce Now entry",
     images: ["img/55/steamdb.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://steamdb.info/app/1030300/history/">SteamDB page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/steamdb.png" class="linkLogo"><a href="https://steamdb.info/app/1030300/history/">SteamDB page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=i9LY67e14Oo">Daily Silksong News 1529 </a></div>',
     ],
     type: "Kinda",
@@ -626,7 +626,7 @@ const newsArray = [
     images: ["img/57/print1.jpg", "img/57/print2.jpg"],
     links: [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://fixupx.com/mossbag69/status/1909249997696086495">Mossbag Tweet</a></div>',
-      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://store-jp.nintendo.com/item/software/D70010000096731">eShop Japan Silksong page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/nintendoeshop.png" class="linkLogo"><a href="https://store-jp.nintendo.com/item/software/D70010000096731">eShop Japan Silksong page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=ObCRErMU9e4">Daily Silksong News 1543 </a></div>',
     ],
     type: "Yes",
@@ -638,11 +638,22 @@ const newsArray = [
     images: ["img/58/tweet.jpg", "img/58/print.jpg"],
     links: [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1909395467945099502">Leth Tweet</a></div>',
-      '<div class="linkDiv"><img src="img/logos/website.png" class="linkLogo"><a href="https://www.acmi.net.au/whats-on/game-worlds/">Game Worlds website</a></div>',
+      '<div class="linkDiv"><img src="img/logos/acmi.png" class="linkLogo"><a href="https://www.acmi.net.au/whats-on/game-worlds/">ACMI Game Worlds post</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Sf1SgcVm6mk">Daily Silksong News 1544 </a></div>',
     ],
     type: "Kinda",
     number: "58",
+  },
+  {
+    date: "2025-04-09",
+    title: "Team Cherry anwers Kickstarter backer about the Silksong keys",
+    images: ["img/59/print.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/kickstarter.png" class="linkLogo"><a href="https://www.kickstarter.com/projects/11662585/hollow-knight/comments?comment=Q29tbWVudC00NDc1MTE2NQ%3D%3D&reply=Q29tbWVudC00NDc3Njk1Mg%3D%3D">Kickstarter comment</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=panptEMYr2k">Daily Silksong News 1545 </a></div>',
+    ],
+    type: "No, but",
+    number: "59",
   },
   {
     date: tomorrowDateString, // Gets YYYY-MM-DD
@@ -652,7 +663,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "59",
+    number: "60",
   },
 ];
 
