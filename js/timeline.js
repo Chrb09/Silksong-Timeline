@@ -657,8 +657,7 @@ const newsArray = [
   },
 {
     date: "2025-04-18",
-    title: "The Silksong trailer is removed frok the Steam page, we don't know if this was intentional or not",
-    images: [],
+    title: "The Silksong trailer is removed from the Steam page, we don't know if this was intentional or not",
     links: [
     '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/O1NDP-qOKtA">Daily Silksong News 1554 </a></div>',
