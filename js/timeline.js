@@ -655,6 +655,17 @@ const newsArray = [
     type: "No, but",
     number: "59",
   },
+{
+    date: "2025-04-18",
+    title: "The Silksong trailer is removed frok the Steam page, we don't know if this was intentional or not",
+    images: [],
+    links: [
+    '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/O1NDP-qOKtA">Daily Silksong News 1554 </a></div>',
+    ],
+    type: "No, but",
+    number: "60",
+  },
   {
     date: tomorrowDateString, // Gets YYYY-MM-DD
     title: "Tomorrow",
@@ -663,7 +674,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "60",
+    number: "61",
   },
 ];
 
