@@ -655,12 +655,14 @@ const newsArray = [
     type: "No, but",
     number: "59",
   },
-{
+  {
     date: "2025-04-18",
-    title: "The Silksong trailer is removed from the Steam page, we don't know if this was intentional or not",
+    title: "The Silksong trailer is removed from the Steam page, it was later confirmed to be caused by a bug",
+    images: ["img/60/print.jpg"],
     links: [
-    '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/O1NDP-qOKtA">Daily Silksong News 1554 </a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1913667736099590533">Leth Tweet</a></div>',
     ],
     type: "No, but",
     number: "60",
