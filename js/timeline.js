@@ -668,6 +668,28 @@ const newsArray = [
     number: "60",
   },
   {
+    date: "2025-04-28",
+    title: "Silksong confirmed again for 2025 on the Nintendo Magazine",
+    images: ["img/61/print.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/nintendoeshop.png" class="linkLogo"><a href="https://www.nintendo.com/jp/games/feature/magazine_2025special/index.html?page=25&device=pc">Nintendo Magazine 2025 (Page 48)</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=UDQdwFY6UE8">Daily Silksong News 1565 </a></div>',
+    ],
+    type: "Kinda",
+    number: "61",
+  },
+  {
+    date: "2025-04-29",
+    title: "Silksong appears on ACMI Instagram, with an old screenshot and a spritesheet for Hornet",
+    images: ["img/62/print1.jpg", "img/62/print2.jpg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/instagram.png" class="linkLogo"><a href="https://www.instagram.com/p/DJAzZwNTynn/">ACMI Instagram post </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=UDQdwFY6UE8">Daily Silksong News 1565 </a></div>',
+    ],
+    type: "Kinda",
+    number: "62",
+  },
+  {
     date: tomorrowDateString, // Gets YYYY-MM-DD
     title: "Tomorrow",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -675,7 +697,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "61",
+    number: "63",
   },
 ];
 
@@ -906,8 +928,8 @@ document.addEventListener("DOMContentLoaded", function () {
       
       <h3>News Types</h3>
       <p><b class="green">Yes</b> -> ${typeCount.Yes} times</p>
-      <p><b class="yellow">Maybe</b> -> ${typeCount.Maybe} times</p>
       <p><b class="yellow">Kinda</b> -> ${typeCount.Kinda} times</p>
+      <p><b class="yellow">Maybe</b> -> ${typeCount.Maybe} times</p>
       <p><b class="red">No, but</b> -> ${typeCount["No, but"]} times</p>
       <p><b class="red">No</b> -> ${typeCount.No} times</p>
       <p><b class="yellow">Kinda old</b> -> ${typeCount["Kinda old"]} time</p>
