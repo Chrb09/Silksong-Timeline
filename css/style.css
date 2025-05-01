@@ -203,7 +203,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   padding-right: 4em;
-  height: 30px;
+  margin-top: 0.75em;
 }
 .hr {
   border-top: 2px solid var(--rose);

@@ -755,10 +755,16 @@ for (let i = 0; i <= daysSinceReveal; i++) {
     let newsMonthStatus;
     monthDiv.classList.add("month");
     monthDiv.setAttribute("data-date", currentDateString);
-    if (newsThisMonth.length == 0) {
+    let newsThisMonthAmount = newsThisMonth.length;
+
+    if (currentMonth == todayDate.getUTCMonth()) {
+      newsThisMonthAmount = newsThisMonthAmount - 1;
+    }
+
+    if (newsThisMonthAmount == 0) {
       newsMonthStatus = "No News";
     } else {
-      newsMonthStatus = newsThisMonth.length + " News";
+      newsMonthStatus = newsThisMonthAmount + " News";
     }
     monthDiv.innerHTML = `<b>${months[currentMonth]} ${currentYear} - ${newsMonthStatus}</b> <div class="hr"></div>`;
 
