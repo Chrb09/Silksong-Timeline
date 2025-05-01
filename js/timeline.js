@@ -705,6 +705,17 @@ const newsArray = [
     number: "63",
   },
   {
+    date: "2025-05-01",
+    title: "Hornet's Partial Sprite Sheet Revealed on IGN blog post",
+    images: ["img/64/print.jpg", "img/64/spritesheet.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/ign.png" class="linkLogo"><a href="https://www.ign.com/articles/hollow-knight-silksong-will-be-playable-in-september-2025-at-an-australian-museum">IGN blog post </a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=-ov5oaqoEr8">Daily Silksong News 1567 </a></div>',
+    ],
+    type: "Yes",
+    number: "64",
+  },
+  {
     date: tomorrowDateString, // Gets YYYY-MM-DD
     title: "Tomorrow",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -712,7 +723,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "64",
+    number: "65",
   },
 ];
 
