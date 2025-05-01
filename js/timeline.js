@@ -690,6 +690,21 @@ const newsArray = [
     number: "62",
   },
   {
+    date: "2025-04-30",
+    title:
+      "Nintendo sends out emails about new games on the Switch 2, confirming again Silksong coming out later this year.",
+    images: [
+      "https://preview.redd.it/nintendo-is-sending-out-emails-confirming-silksong-is-v0-mu3d7u96d1ye1.jpg?width=1080&crop=smart&auto=webp&s=bec9757c9517703cbc26bc034375c4ed43c92ee3",
+      "https://preview.redd.it/nintendo-is-sending-out-emails-confirming-silksong-is-v0-tgwntu96d1ye1.jpg?width=1080&crop=smart&auto=webp&s=6ecc743a0ce54a5a2e8ad5bc3106c6d5634e4fe9",
+      "https://preview.redd.it/nintendo-is-sending-out-emails-confirming-silksong-is-v0-ju6fu2b6d1ye1.jpg?width=1080&crop=smart&auto=webp&s=5fb810fcd9f506cad758ee3d4ab86969e98a59c8",
+    ],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1kbr746/nintendo_is_sending_out_emails_confirming/">r/Silksong Reddit post </a></div>',
+    ],
+    type: "Kinda",
+    number: "63",
+  },
+  {
     date: tomorrowDateString, // Gets YYYY-MM-DD
     title: "Tomorrow",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -697,7 +712,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "63",
+    number: "64",
   },
 ];
 
@@ -725,10 +740,31 @@ for (let i = 0; i <= daysSinceReveal; i++) {
   currentDate.setUTCDate(revealDate.getUTCDate() + i);
 
   const currentDateString = currentDate.toISOString().split("T")[0];
-
   const newsItem = newsArray.find((news) => news.date === currentDateString);
 
-  // Create elements using `document.createElement`
+  if (currentDate.getUTCDate() === 1) {
+    const currentMonth = currentDate.getUTCMonth();
+    const currentYear = currentDate.getUTCFullYear();
+
+    const newsThisMonth = newsArray.filter((news) => {
+      const newsDate = new Date(news.date);
+      return newsDate.getUTCMonth() === currentMonth && newsDate.getUTCFullYear() === currentYear;
+    });
+
+    const monthDiv = document.createElement("div");
+    let newsMonthStatus;
+    monthDiv.classList.add("day", "month");
+    monthDiv.setAttribute("data-date", currentDateString);
+    if (newsThisMonth.length == 0) {
+      newsMonthStatus = "No News";
+    } else {
+      newsMonthStatus = newsThisMonth.length + " News";
+    }
+    monthDiv.innerHTML = `<b>${months[currentMonth]} ${currentYear} - ${newsMonthStatus}</b> <div class="hr"></div>`;
+
+    timelineWrapper.appendChild(monthDiv);
+  }
+
   const dayDiv = document.createElement("div");
   dayDiv.classList.add("day");
   dayDiv.setAttribute("data-date", currentDateString);
@@ -737,6 +773,7 @@ for (let i = 0; i <= daysSinceReveal; i++) {
 
   if (newsItem) {
     dayDiv.classList.add("news");
+
     if (newsItem.type == "Yes") {
       dayDiv.classList.add("green");
     } else if (newsItem.type == "Kinda" || newsItem.type == "Maybe" || newsItem.type == "Kinda old") {
@@ -744,39 +781,35 @@ for (let i = 0; i <= daysSinceReveal; i++) {
     } else if (newsItem.type == "Other") {
       dayDiv.classList.add("blue");
     }
+
     dayDiv.setAttribute("data-news", newsItem.type);
     dayDiv.setAttribute("data-newsCount", newsItem.number);
 
     let formattedDate = formatStringDate(newsItem.date);
-    dayDiv.innerHTML = `<div class="news-circle"></div> <b> ${formattedDate} </b> - ${newsItem.title}
-    `;
+    dayDiv.innerHTML = `<div class="news-circle"></div> <b> ${formattedDate} </b> - ${newsItem.title}`;
+
     if (newsItem.images) {
       const imagesDiv = document.createElement("div");
       imagesDiv.classList.add("newsImages");
-      for (let index = 0; index < newsItem.images.length; index++) {
-        let imgObject = document.createElement("img");
-        imgObject.setAttribute("src", newsItem.images[index]);
+      newsItem.images.forEach((imgSrc) => {
+        const imgObject = document.createElement("img");
+        imgObject.setAttribute("src", imgSrc);
         imgObject.classList.add("newsImg");
         imagesDiv.appendChild(imgObject);
-      }
+      });
       dayDiv.appendChild(imagesDiv);
     }
+
     if (newsItem.links) {
       const linksDiv = document.createElement("div");
       linksDiv.classList.add("newsLinks");
-      for (let index = 0; index < newsItem.links.length; index++) {
-        let temp = document.createElement("div");
-        temp.innerHTML = newsItem.links[index];
-        let linkObject = temp.firstChild;
-        linksDiv.appendChild(linkObject);
-      }
-
+      newsItem.links.forEach((linkHTML) => {
+        const temp = document.createElement("div");
+        temp.innerHTML = linkHTML;
+        linksDiv.appendChild(temp.firstChild);
+      });
       dayDiv.appendChild(linksDiv);
     }
-  } else if (currentDate.getDate() == "01") {
-    dayDiv.classList.add("month");
-    dayDiv.innerHTML =
-      "<b>" + months[currentDate.getMonth()] + " " + currentDate.getFullYear() + '</b> <div class="hr"></div>';
   }
 
   timelineWrapper.appendChild(dayDiv);
@@ -860,7 +893,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const daysUntilSwitchTwo = Math.ceil((switchTwoDate - todayDate) / (1000 * 60 * 60 * 24));
 
   const daysSinceRevealToday = daysSinceReveal - 1;
-  const actualNewsCount = newsDaysCount - 5;
+  const actualNewsCount = newsDaysCount - 7;
   const formattedTodayDate = formatStringDate(todayDateString);
   const avgDaysBetweenNews = Math.floor(daysSinceRevealToday / actualNewsCount);
   const newsChance = ((actualNewsCount / daysSinceRevealToday) * 100).toFixed(2);
