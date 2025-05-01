@@ -753,7 +753,7 @@ for (let i = 0; i <= daysSinceReveal; i++) {
 
     const monthDiv = document.createElement("div");
     let newsMonthStatus;
-    monthDiv.classList.add("day", "month");
+    monthDiv.classList.add("month");
     monthDiv.setAttribute("data-date", currentDateString);
     if (newsThisMonth.length == 0) {
       newsMonthStatus = "No News";
