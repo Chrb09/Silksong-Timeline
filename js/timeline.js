@@ -900,7 +900,7 @@ last.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const maxReleaseDate = new Date(Date.UTC(2025, 11, 31));
+  const maxReleaseDate = new Date(Date.UTC(2025, 8, 18));
   maxReleaseDate.setUTCHours(0, 0, 0, 0);
   const maxDaysUntilRelease = Math.ceil((maxReleaseDate - todayDate) / (1000 * 60 * 60 * 24));
   const chanceOfSilksongTomorrow = ((1 / maxDaysUntilRelease) * 100).toFixed(2);
@@ -951,7 +951,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <h1>Stats - ${formattedTodayDate}</h1>
 
       <h3>Release Predictions</h3>
-      <p>There's a maximum of <b>${maxDaysUntilRelease} days</b> until Silksong releases.</p>
+      <p>There's a maximum of <b>${maxDaysUntilRelease} days</b> until Silksong releases. (Max: 18 September 2025)</p>
       <p>That's approximately <b>${(maxDaysUntilRelease / 30.42).toFixed(2)} months</b>.</p>
        <p>The Nintendo Switch Two will release in <b>${daysUntilSwitchTwo} days.</b> </p>
       <p>There's a <b>${chanceOfSilksongTomorrow}%</b> that Silksong releases tomorrow.</p>
