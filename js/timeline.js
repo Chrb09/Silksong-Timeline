@@ -716,6 +716,19 @@ const newsArray = [
     number: "64",
   },
   {
+    date: "2025-05-17",
+    title: "Silksong confirmed to be releasing after June 6th",
+    images: [
+      "https://preview.redd.it/silksong-confirmed-to-be-releasing-after-june-6th-this-is-v0-5a70utj8h71f1.png?width=1080&crop=smart&auto=webp&s=b0ffd5a5aabd109206f73ce83443a4b7a1bf2a01",
+      "https://preview.redd.it/silksong-confirmed-to-be-releasing-after-june-6th-this-is-v0-as113rj8h71f1.png?width=1080&crop=smart&auto=webp&s=390e025ab56db8891f7b48345269deb6b4a350c8",
+    ],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/nintendoeshop.png" class="linkLogo"><a href="https://store-jp.nintendo.com/feature/feature_switch2_soft_2504">Nintendo Switch 2 Software</a></div>',
+    ],
+    type: "Yes",
+    number: "65",
+  },
+  {
     date: tomorrowDateString, // Gets YYYY-MM-DD
     title: "Tomorrow",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -723,7 +736,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "65",
+    number: "66",
   },
 ];
 
@@ -905,9 +918,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const maxDaysUntilRelease = Math.ceil((maxReleaseDate - todayDate) / (1000 * 60 * 60 * 24));
   const chanceOfSilksongTomorrow = ((1 / maxDaysUntilRelease) * 100).toFixed(2);
   const chanceOfSilksongNextMonth = ((30 / maxDaysUntilRelease) * 100).toFixed(2);
-  const switchTwoDate = new Date(Date.UTC(2025, 5, 5));
-  switchTwoDate.setUTCHours(0, 0, 0, 0);
-  const daysUntilSwitchTwo = Math.ceil((switchTwoDate - todayDate) / (1000 * 60 * 60 * 24));
+  const releaseWindowStartDate = new Date(Date.UTC(2025, 5, 6));
+  releaseWindowStartDate.setUTCHours(0, 0, 0, 0);
+  const daysUntilReleaseWindow = Math.ceil((releaseWindowStartDate - todayDate) / (1000 * 60 * 60 * 24));
+  const releaseWindowDays = Math.ceil((maxReleaseDate - releaseWindowStartDate) / (1000 * 60 * 60 * 24));
 
   const daysSinceRevealToday = daysSinceReveal - 1;
   const actualNewsCount = newsDaysCount - 7;
@@ -947,15 +961,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   console.log(typeCount);
   // Display results
+  //       <p>There's a <b>0%</b> that Silksong releases on the next 30 days.</p>
   document.getElementById("stats").innerHTML = `
       <h1>Stats - ${formattedTodayDate}</h1>
 
       <h3>Release Predictions</h3>
       <p>There's a maximum of <b>${maxDaysUntilRelease} days</b> until Silksong releases. (Max: 18 September 2025)</p>
       <p>That's approximately <b>${(maxDaysUntilRelease / 30.42).toFixed(2)} months</b>.</p>
-       <p>The Nintendo Switch Two will release in <b>${daysUntilSwitchTwo} days.</b> </p>
-      <p>There's a <b>${chanceOfSilksongTomorrow}%</b> that Silksong releases tomorrow.</p>
-      <p>There's a <b>${chanceOfSilksongNextMonth}%</b> that Silksong releases on the next 30 days.</p>
+      <p>There's a <b>0%</b> that Silksong releases tomorrow.</p>
+
+
+      <h3>Release Window</h3>
+      <p>The release window will start in <b>${daysUntilReleaseWindow} days.</b> </p>
+      <p>The release window is about <b>${releaseWindowDays} days</b> long</p>
+      <p><b>0%</b> of the release window has passed.</p>
 
       <h3>News Predictions</h3>
       <p>Silksong was revealed <b>${daysSinceRevealToday} days ago</b>.</p>
