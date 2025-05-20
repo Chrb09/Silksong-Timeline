@@ -701,7 +701,7 @@ const newsArray = [
     links: [
       '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1kbr746/nintendo_is_sending_out_emails_confirming/">r/Silksong Reddit post </a></div>',
     ],
-    type: "Kinda",
+    type: "No, but",
     number: "63",
   },
   {
@@ -724,9 +724,21 @@ const newsArray = [
     ],
     links: [
       '<div class="linkDiv"><img src="img/logos/nintendoeshop.png" class="linkLogo"><a href="https://store-jp.nintendo.com/feature/feature_switch2_soft_2504">Nintendo Switch 2 Software</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=C6jmX4LJuuQ">Daily Silksong News 1583 </a></div>',
     ],
-    type: "Yes",
+    type: "Kinda",
     number: "65",
+  },
+  {
+    date: "2025-05-20",
+    title: "New Silksong icon added to the Nintendo eShop",
+    images: ["img/66/print.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1kqyoz8/small_news_team_cherry_has_created_a_colorchanged/">Reddit post</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Xij94fN1pnk">Daily Silksong News 1586 </a></div>',
+    ],
+    type: "No, but",
+    number: "66",
   },
   {
     date: tomorrowDateString, // Gets YYYY-MM-DD
@@ -736,7 +748,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "66",
+    number: "67",
   },
 ];
 
@@ -772,9 +784,13 @@ for (let i = 0; i <= daysSinceReveal; i++) {
 
     const newsThisMonth = newsArray.filter((news) => {
       const newsDate = new Date(news.date);
-      return newsDate.getUTCMonth() === currentMonth && newsDate.getUTCFullYear() === currentYear;
-    });
+      const isCurrentMonthAndYear =
+        newsDate.getUTCMonth() === currentMonth && newsDate.getUTCFullYear() === currentYear;
 
+      const validTypes = ["Yes", "Kinda", "Maybe"];
+
+      return isCurrentMonthAndYear && validTypes.includes(news.type);
+    });
     const monthDiv = document.createElement("div");
     let newsMonthStatus;
     monthDiv.classList.add("month");
@@ -924,7 +940,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const releaseWindowDays = Math.ceil((maxReleaseDate - releaseWindowStartDate) / (1000 * 60 * 60 * 24));
 
   const daysSinceRevealToday = daysSinceReveal - 1;
-  const actualNewsCount = newsDaysCount - 7;
+  const actualNewsCount = newsDaysCount - 9;
   const formattedTodayDate = formatStringDate(todayDateString);
   const avgDaysBetweenNews = Math.floor(daysSinceRevealToday / actualNewsCount);
   const newsChance = ((actualNewsCount / daysSinceRevealToday) * 100).toFixed(2);
