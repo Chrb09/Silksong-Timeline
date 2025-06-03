@@ -741,6 +741,18 @@ const newsArray = [
     number: "66",
   },
   {
+    date: "2025-06-03",
+    title: "A bunch of changes to the Silksong steam page on the background, including a new depot change",
+    images: ["img/67/print1.png", "img/67/print2.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/steamdb.png" class="linkLogo"><a href="https://steamdb.info/app/1030300/history/">SteamDB page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1l27d0p/steam_update_recap/">Reddit post</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=ns-AjKMFYCI">Primacon Video</a></div>',
+    ],
+    type: "Kinda",
+    number: "67",
+  },
+  {
     date: tomorrowDateString, // Gets YYYY-MM-DD
     title: "Tomorrow",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -748,7 +760,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "67",
+    number: "68",
   },
 ];
 
