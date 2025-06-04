@@ -747,9 +747,9 @@ const newsArray = [
     links: [
       '<div class="linkDiv"><img src="img/logos/steamdb.png" class="linkLogo"><a href="https://steamdb.info/app/1030300/history/">SteamDB page</a></div>',
       '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1l27d0p/steam_update_recap/">Reddit post</a></div>',
-      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=ns-AjKMFYCI">Primacon Video</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=2RF1Xnfg4dw">Daily Silksong News 1600</a></div>',
     ],
-    type: "Kinda",
+    type: "Kinda big",
     number: "67",
   },
   {
@@ -799,7 +799,7 @@ for (let i = 0; i <= daysSinceReveal; i++) {
       const isCurrentMonthAndYear =
         newsDate.getUTCMonth() === currentMonth && newsDate.getUTCFullYear() === currentYear;
 
-      const validTypes = ["Yes", "Kinda", "Maybe"];
+      const validTypes = ["Yes", "Kinda", "Maybe", "Kinda old", "Kinda big"];
 
       return isCurrentMonthAndYear && validTypes.includes(news.type);
     });
@@ -834,7 +834,12 @@ for (let i = 0; i <= daysSinceReveal; i++) {
 
     if (newsItem.type == "Yes") {
       dayDiv.classList.add("green");
-    } else if (newsItem.type == "Kinda" || newsItem.type == "Maybe" || newsItem.type == "Kinda old") {
+    } else if (
+      newsItem.type == "Kinda" ||
+      newsItem.type == "Maybe" ||
+      newsItem.type == "Kinda old" ||
+      newsItem.type == "Kinda big"
+    ) {
       dayDiv.classList.add("yellow");
     } else if (newsItem.type == "Other") {
       dayDiv.classList.add("blue");
@@ -1029,6 +1034,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <p><b class="yellow">Maybe</b> -> ${typeCount.Maybe} times</p>
       <p><b class="red">No, but</b> -> ${typeCount["No, but"]} times</p>
       <p><b class="red">No</b> -> ${typeCount.No} times</p>
+      <p><b class="yellow">Kinda big</b> -> ${typeCount["Kinda big"]} time</p>
       <p><b class="yellow">Kinda old</b> -> ${typeCount["Kinda old"]} time</p>
       <p><b class="blue">Other</b> -> ${typeCount.Other} time</p>
   `;
