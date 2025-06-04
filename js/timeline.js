@@ -285,7 +285,7 @@ const newsArray = [
     title: "Edge Magazine teases new issue with what appears to be Hornets head",
     images: ["img/25/tweet.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/edgeonline/status/1338072669527420928"> @edgeonline tweet </a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/edgeonline/status/1338072669527420928"> Edge Magazine tweet </a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=5251s">Daily Silksong News -33 </a></div>',
     ],
     type: "Maybe",
@@ -306,7 +306,7 @@ const newsArray = [
     title: "New issue of Edge Magazine is released",
     images: ["img/27/screenshot1.jpg", "img/27/screenshot2.jpg", "img/27/screenshot3.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/edgeonline/status/1344588834231693313"> @edgeonline tweet </a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/edgeonline/status/1344588834231693313"> Edge Magazine tweet </a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=5397s">Daily Silksong News -15 </a></div>',
     ],
     type: "Yes",
@@ -524,7 +524,8 @@ const newsArray = [
     title: "Silksong gets new Microsoft Store page",
     images: ["img/48/print.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1774895893520466278">Leth tweet </a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1774895893520466278">Leths tweet </a></div>',
+      '<div class="linkDiv"><img src="img/logos/xbox.png" class="linkLogo"><a href="https://www.xbox.com/en-US/games/hollow-knight-silksong">Silksong Xbox page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=CbmtBrOSmlE">Daily Silksong News 1173 </a></div>',
     ],
     type: "Kinda",
@@ -534,7 +535,7 @@ const newsArray = [
     date: "2024-04-04",
     title: "Silksong gets several new age ratings",
     links: [
-      '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1buhzj0/sorry_to_burst_your_bubbles_but_all_the/">Reddit post explaining the situation </a></div>',
+      '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1buhzj0/sorry_to_burst_your_bubbles_but_all_the/">Reddit post</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=SBzSijb7_y8">Daily Silksong News 1175 </a></div>',
     ],
     type: "Maybe",
@@ -542,7 +543,7 @@ const newsArray = [
   },
   {
     date: "2024-06-07",
-    title: "Silksong Hints for event appearance",
+    title: "Leaker hints at Silksong on SGF",
     images: ["img/50/tweet.jpg"],
     links: [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/eXtas1stv/status/1798739884628439375">eXtas1s tweet</a></div>',
@@ -556,7 +557,7 @@ const newsArray = [
     title: "William Pellen tweets something that some consider to be an ARG",
     images: ["img/51/tweet.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/everydruidwaswr/status/1879751713621725206">William Pellen tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/everydruidwaswr/status/1879751713621725206">William Pellens tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=FA9H3snFrSQ">Daily Silksong News 1462 </a></div>',
     ],
     type: "Maybe",
@@ -567,7 +568,7 @@ const newsArray = [
     title: "Leth confirms that there is no ARG and it was just a coincidence",
     images: ["img/52/discord.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/discord.png" class="linkLogo"><a href="https://discord.com/channels/283467363729408000/586931790208434203/1330100156518891571">Leth message </a></div>',
+      '<div class="linkDiv"><img src="img/logos/discord.png" class="linkLogo"><a href="https://discord.com/channels/283467363729408000/586931790208434203/1330100156518891571">Leths message </a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=O9NnGdrNZQE">Daily Silksong News 1462 </a></div>',
     ],
     type: "Maybe",
@@ -613,7 +614,7 @@ const newsArray = [
     images: ["img/56/banner.jpg", "img/56/tweet.png"],
     links: [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=VrTVeYm4iIM&t=2986s">Nintendo Switch 2 Direct </a></div>',
-      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/NintendoEurope/status/1907430913148944627">Nintendo Europe Tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/NintendoEurope/status/1907430913148944627">Nintendo Europes tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=-3QECuK0_tE">Daily Silksong News 1538 </a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=J1M5rKEKN2Q">Daily Silksong News 1539 </a></div>',
     ],
@@ -625,7 +626,7 @@ const newsArray = [
     title: "New Silksong Screenshots from Nintendo Japan eShop",
     images: ["img/57/print1.jpg", "img/57/print2.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://fixupx.com/mossbag69/status/1909249997696086495">Mossbag Tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://fixupx.com/mossbag69/status/1909249997696086495">Mossbags tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/nintendoeshop.png" class="linkLogo"><a href="https://store-jp.nintendo.com/item/software/D70010000096731">eShop Japan Silksong page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=ObCRErMU9e4">Daily Silksong News 1543 </a></div>',
     ],
@@ -637,7 +638,7 @@ const newsArray = [
     title: "Silksong confirmed in Switch 1 & 2, and Silksong hinted at on ACMI Game Worlds exhibition on september",
     images: ["img/58/tweet.jpg", "img/58/print.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1909395467945099502">Leth Tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1909395467945099502">Leths tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/acmi.png" class="linkLogo"><a href="https://www.acmi.net.au/whats-on/game-worlds/">ACMI Game Worlds post</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Sf1SgcVm6mk">Daily Silksong News 1544 </a></div>',
     ],
@@ -662,7 +663,7 @@ const newsArray = [
     links: [
       '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/O1NDP-qOKtA">Daily Silksong News 1554 </a></div>',
-      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1913667736099590533">Leth Tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1913667736099590533">Leths tweet</a></div>',
     ],
     type: "No, but",
     number: "60",
@@ -683,7 +684,7 @@ const newsArray = [
     title: "Silksong appears on ACMI Instagram, with an old screenshot and a spritesheet for Hornet",
     images: ["img/62/print1.jpg", "img/62/print2.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/instagram.png" class="linkLogo"><a href="https://www.instagram.com/p/DJAzZwNTynn/">ACMI Instagram post </a></div>',
+      '<div class="linkDiv"><img src="img/logos/instagram.png" class="linkLogo"><a href="https://www.instagram.com/p/DJAzZwNTynn/">ACMIs Instagram post </a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=UDQdwFY6UE8">Daily Silksong News 1565 </a></div>',
     ],
     type: "Kinda",
@@ -699,7 +700,7 @@ const newsArray = [
       "https://preview.redd.it/nintendo-is-sending-out-emails-confirming-silksong-is-v0-ju6fu2b6d1ye1.jpg?width=1080&crop=smart&auto=webp&s=5fb810fcd9f506cad758ee3d4ab86969e98a59c8",
     ],
     links: [
-      '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1kbr746/nintendo_is_sending_out_emails_confirming/">r/Silksong Reddit post </a></div>',
+      '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1kbr746/nintendo_is_sending_out_emails_confirming/">Reddit post </a></div>',
     ],
     type: "No, but",
     number: "63",
