@@ -954,8 +954,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const chanceOfSilksongNextMonth = ((30 / maxDaysUntilRelease) * 100).toFixed(2);
   const releaseWindowStartDate = new Date(Date.UTC(2025, 5, 6));
   releaseWindowStartDate.setUTCHours(0, 0, 0, 0);
-  const daysUntilReleaseWindow = Math.ceil((releaseWindowStartDate - todayDate) / (1000 * 60 * 60 * 24));
   const releaseWindowDays = Math.ceil((maxReleaseDate - releaseWindowStartDate) / (1000 * 60 * 60 * 24));
+  const releaseWindowStartDateDays = Math.ceil((todayDate - releaseWindowStartDate) / (1000 * 60 * 60 * 24));
+  const releaseWindowRatio = ((releaseWindowStartDateDays / 365) * 100).toFixed(2);
 
   const daysSinceRevealToday = daysSinceReveal - 1;
   const actualNewsCount = newsDaysCount - 9;
@@ -994,21 +995,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   console.log(typeCount);
-  // Display results
-  //       <p>There's a <b>0%</b> that Silksong releases on the next 30 days.</p>
+
   document.getElementById("stats").innerHTML = `
       <h1>Stats - ${formattedTodayDate}</h1>
 
       <h3>Release Predictions</h3>
       <p>There's a maximum of <b>${maxDaysUntilRelease} days</b> until Silksong releases. (Max: 18 September 2025)</p>
       <p>That's approximately <b>${(maxDaysUntilRelease / 30.42).toFixed(2)} months</b>.</p>
-      <p>There's a <b>0%</b> that Silksong releases tomorrow.</p>
-
-
-      <h3>Release Window</h3>
-      <p>The release window will start in <b>${daysUntilReleaseWindow} days.</b> </p>
       <p>The release window is about <b>${releaseWindowDays} days</b> long</p>
-      <p><b>0%</b> of the release window has passed.</p>
+      <p><b>${releaseWindowRatio}%</b> of the release window has passed.</p>
+      <p>There's a <b>${chanceOfSilksongTomorrow}%</b> that Silksong releases tomorrow.</p>
+      <p>There's a <b>${chanceOfSilksongNextMonth}%</b> that Silksong releases next month.</p>
 
       <h3>News Predictions</h3>
       <p>Silksong was revealed <b>${daysSinceRevealToday} days ago</b>.</p>
