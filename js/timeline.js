@@ -754,6 +754,17 @@ const newsArray = [
     number: "67",
   },
   {
+    date: "2025-06-06",
+    title: "Silksong steam page updated on the background, now with suport for MacOS and Linux",
+    images: ["img/68/print.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/steamdb.png" class="linkLogo"><a href="https://steamdb.info/app/1030300/history/">SteamDB page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=1_BbaVd5fjk">Daily Silksong News 1603 </a></div>',
+    ],
+    type: "Kinda",
+    number: "68",
+  },
+  {
     date: tomorrowDateString, // Gets YYYY-MM-DD
     title: "Tomorrow",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -761,7 +772,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "68",
+    number: "69",
   },
 ];
 
