@@ -171,6 +171,10 @@ button {
   height: 22.5rem;
   border-radius: 0.5em;
 }
+.smallimg .newsImg {
+  height: 17.5rem;
+  border-radius: 0.5em;
+}
 a {
   color: var(--gray);
 }

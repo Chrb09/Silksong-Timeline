@@ -765,6 +765,18 @@ const newsArray = [
     number: "68",
   },
   {
+    date: "2025-06-08",
+    title:
+      "Silksong shown in the ROG Xbox Ally Reveal Trailer, Leth also confirms release before the holidays season (Probably before ACMI Game Worlds)",
+    images: ["img/69/print1.png", "img/69/print2.png", "img/69/print3.png", "img/69/leth.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/FIVmyOIV1MQ">ROG Xbox Ally World Premiere Reveal Trailer</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=167tSGgDmW0">Daily Silksong News 1605 </a></div>',
+    ],
+    type: "Yes",
+    number: "69",
+  },
+  {
     date: tomorrowDateString, // Gets YYYY-MM-DD
     title: "Tomorrow",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -772,7 +784,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "69",
+    number: "70",
   },
 ];
 
