@@ -68,6 +68,7 @@ const newsArray = [
     date: "2019-03-19",
     title: "Mini Silksong Update",
     images: ["img/4/blog.jpg"],
+    imagetype: "big",
     links: [
       '<div class="linkDiv"><img src="img/logos/teamcherry.png" class="linkLogo"><a href="https://www.teamcherry.com.au/blog/hollow-knight-silksong-revealed">LATE ANNIVERSARY CELEBRATION! Blog Post</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=435s">Daily Silksong News -669</a></div>',
@@ -99,6 +100,7 @@ const newsArray = [
     images: [
       "https://preview.redd.it/everything-silksong-timeline-2019-2025-v0-i930yd1btnle1.png?width=642&format=png&auto=webp&s=a96797eaf6a33aac05a84441f2b760e4eead62b2",
     ],
+    imagetype: "big",
     links: [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/TeamCherryGames/status/1138668903893164033">Team Cherry tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=1169s">Daily Silksong News -584</a></div>',
@@ -121,6 +123,7 @@ const newsArray = [
     date: "2019-06-25",
     title: "Team Cherry posts Post E3 Wrap ",
     images: ["img/9/blog.jpg"],
+    imagetype: "big",
     links: [
       '<div class="linkDiv"><img src="img/logos/teamcherry.png" class="linkLogo"><a href="https://www.teamcherry.com.au/blog/post-e3-wrap-silksong-systems-update">POST E3 WRAP! Blog Post</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=1307s">Daily Silksong News -571</a></div>',
@@ -141,6 +144,7 @@ const newsArray = [
     date: "2019-10-10",
     title: "Silksong Demo playable in Pax Australia announced",
     images: ["img/11/twitter.jpg"],
+    imagetype: "big",
     links: [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/TeamCherryGames/status/1182098459278467073">Team Cherry tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=2159s">Daily Silksong News -464</a></div>',
@@ -162,6 +166,7 @@ const newsArray = [
     date: "2019-12-13",
     title: "Team Cherry posts Holiday Sign off",
     images: ["img/13/blog.jpg"],
+    imagetype: "big",
     links: [
       '<div class="linkDiv"><img src="img/logos/teamcherry.png" class="linkLogo"><a href="https://www.teamcherry.com.au/blog/post-e3-wrap-silksong-systems-update">TEAM CHERRY HOLIDAY SIGN OFF</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=2613s">Daily Silksong News -400</a></div>',
@@ -263,7 +268,7 @@ const newsArray = [
     title: "Nintendo Indie World shared an infographic about indio games coming to the switch with the Silksong logo",
     images: ["https://pbs.twimg.com/media/Ef8xhkNWoAMlwqv?format=jpg&name=medium"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/twtter.png" class="linkLogo"><a href="https://x.com/NintendoUK/status/1296809703230582785">Nintendo UK Tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/NintendoUK/status/1296809703230582785">Nintendo UK Tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=4558s">Daily Silksong News -147 </a></div>',
     ],
     type: "Maybe",
@@ -440,6 +445,7 @@ const newsArray = [
     date: "2022-10-29",
     title: "Named Silksong screenshots found on the Xbox Wire Website",
     images: ["img/40/print.jpg"],
+    imagetype: "big",
     links: [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=4yYBbbNlFxo">Daily Silksong News 652 </a></div>',
     ],
@@ -523,6 +529,7 @@ const newsArray = [
     date: "2024-04-02",
     title: "Silksong gets new Microsoft Store page",
     images: ["img/48/print.jpg"],
+    imagetype: "small",
     links: [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1774895893520466278">Leths tweet </a></div>',
       '<div class="linkDiv"><img src="img/logos/xbox.png" class="linkLogo"><a href="https://www.xbox.com/en-US/games/hollow-knight-silksong">Silksong Xbox page</a></div>',
@@ -545,6 +552,7 @@ const newsArray = [
     date: "2024-06-07",
     title: "Leaker hints at Silksong on SGF",
     images: ["img/50/tweet.jpg"],
+    imagetype: "big",
     links: [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/eXtas1stv/status/1798739884628439375">eXtas1s tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=ARpy-EhHDCs">Daily Silksong News 1238 </a></div>',
@@ -556,6 +564,7 @@ const newsArray = [
     date: "2025-01-16",
     title: "William Pellen tweets something that some consider to be an ARG",
     images: ["img/51/tweet.jpg"],
+    imagetype: "small",
     links: [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/everydruidwaswr/status/1879751713621725206">William Pellens tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=FA9H3snFrSQ">Daily Silksong News 1462 </a></div>',
@@ -600,6 +609,7 @@ const newsArray = [
     title:
       "Biggest Silksong Steam page update in years including copyright update, new library images and NVIDIA GeForce Now entry",
     images: ["img/55/steamdb.jpg"],
+    imagetype: "big",
     links: [
       '<div class="linkDiv"><img src="img/logos/steamdb.png" class="linkLogo"><a href="https://steamdb.info/app/1030300/history/">SteamDB page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=i9LY67e14Oo">Daily Silksong News 1529 </a></div>',
@@ -672,6 +682,7 @@ const newsArray = [
     date: "2025-04-28",
     title: "Silksong confirmed again for 2025 on the Nintendo Magazine",
     images: ["img/61/print.jpg"],
+    imagetype: "small",
     links: [
       '<div class="linkDiv"><img src="img/logos/nintendoeshop.png" class="linkLogo"><a href="https://www.nintendo.com/jp/games/feature/magazine_2025special/index.html?page=25&device=pc">Nintendo Magazine 2025 (Page 48)</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=UDQdwFY6UE8">Daily Silksong News 1565 </a></div>',
@@ -757,6 +768,7 @@ const newsArray = [
     date: "2025-06-06",
     title: "Silksong steam page updated on the background, now with suport for MacOS and Linux",
     images: ["img/68/print.png"],
+    imagetype: "small",
     links: [
       '<div class="linkDiv"><img src="img/logos/steamdb.png" class="linkLogo"><a href="https://steamdb.info/app/1030300/history/">SteamDB page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=1_BbaVd5fjk">Daily Silksong News 1603 </a></div>',
@@ -766,15 +778,26 @@ const newsArray = [
   },
   {
     date: "2025-06-08",
-    title:
-      "Silksong shown in the ROG Xbox Ally Reveal Trailer, Leth also confirms release before the holidays season (Probably before ACMI Game Worlds)",
+    title: "Silksong shown in the ROG Xbox Ally Reveal Trailer, Leth also confirms release before the holidays season",
     images: ["img/69/print1.png", "img/69/print2.png", "img/69/print3.png", "img/69/leth.png"],
+    imagetype: "small",
     links: [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/FIVmyOIV1MQ">ROG Xbox Ally World Premiere Reveal Trailer</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=167tSGgDmW0">Daily Silksong News 1605 </a></div>',
     ],
     type: "Yes",
     number: "69",
+  },
+  {
+    date: "2025-06-10",
+    title: "PS4 and Nintendo Switch 2 added to the Silksong Website",
+    images: ["img/70/print.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/teamcherry.png" class="linkLogo"><a href="https://hollowknightsilksong.com/">Silksong Website</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=-X3ZZ-x0IcI">Daily Silksong News 1607 </a></div>',
+    ],
+    type: "No, but",
+    number: "70",
   },
   {
     date: tomorrowDateString, // Gets YYYY-MM-DD
@@ -784,7 +807,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "70",
+    number: "71",
   },
 ];
 
@@ -878,6 +901,12 @@ for (let i = 0; i <= daysSinceReveal; i++) {
     if (newsItem.images) {
       const imagesDiv = document.createElement("div");
       imagesDiv.classList.add("newsImages");
+      if (newsItem.imagetype === "small") {
+        imagesDiv.classList.add("smallimg");
+      } else if (newsItem.imagetype === "big") {
+        imagesDiv.classList.add("bigimg");
+      }
+
       newsItem.images.forEach((imgSrc) => {
         const imgObject = document.createElement("img");
         imgObject.setAttribute("src", imgSrc);
