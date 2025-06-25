@@ -800,6 +800,17 @@ const newsArray = [
     number: "70",
   },
   {
+    date: "2025-06-25",
+    title: "Leth was added as a collaborator to the Silksong Kickstarter page, possibly preparing for the backers keys",
+    images: ["img/71/print.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/kickstarter.png" class="linkLogo"><a href="https://www.kickstarter.com/projects/11662585/hollow-knight/creator">Kickstarter creator page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=2wkwk-ORwdY">Daily Silksong News 1622 </a></div>',
+    ],
+    type: "No, but",
+    number: "71",
+  },
+  {
     date: tomorrowDateString, // Gets YYYY-MM-DD
     title: "Tomorrow",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -807,7 +818,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "71",
+    number: "72",
   },
 ];
 
