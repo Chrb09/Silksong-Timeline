@@ -823,6 +823,20 @@ const newsArray = [
     number: "72",
   },
   {
+    date: "2025-07-03",
+    title:
+      "ACMI posts a promo video for their Game Worlds exhibition pre-sale, on their website a new 'Silksong Stash' bundle is available for pre-order, which includes a 64 page magazine about Hollow Knight and Silksong, there was also a bunch of steamDB changes",
+    images: ["img/73/print2.png", "img/73/print1.png", "img/73/print3.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/acmi.png" class="linkLogo"><a href="https://www.acmi.net.au/whats-on/game-worlds-presale/">ACMI Game Worlds pre-sale page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/instagram.png" class="linkLogo"><a href="https://www.instagram.com/acmionline/reel/DLoCDuhqbNc/">ACMI Instragram post</a></div>',
+      '<div class="linkDiv"><img src="img/logos/steamdb.png" class="linkLogo"><a href="https://steamdb.info/app/1030300/history/">SteamDB page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=z-XBjye-zsc">Daily Silksong News 1630 </a></div>',
+    ],
+    type: "Kinda",
+    number: "73",
+  },
+  {
     date: tomorrowDateString, // Gets YYYY-MM-DD
     title: "Tomorrow",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -830,7 +844,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "73",
+    number: "74",
   },
 ];
 
