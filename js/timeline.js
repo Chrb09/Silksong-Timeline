@@ -837,6 +837,18 @@ const newsArray = [
     number: "73",
   },
   {
+    date: "2025-07-28",
+    title: "Xbox confirms that a new Silksong demo will be playable at Gamescom 2025 for PC and ROG Xbox Ally",
+    images: ["img/74/print1.png", "img/74/print2.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/geoffkeighley/status/1949819502658523580">Geoff Keighleys tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/Xbox/status/1949817444572471371">Xbox tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=FLAbIf3Opf8">Daily Silksong News 1655 </a></div>',
+    ],
+    type: "Yes",
+    number: "74",
+  },
+  {
     date: tomorrowDateString, // Gets YYYY-MM-DD
     title: "Tomorrow",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -844,7 +856,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "74",
+    number: "75",
   },
 ];
 
@@ -1036,7 +1048,7 @@ last.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const maxReleaseDate = new Date(Date.UTC(2025, 8, 18));
+  const maxReleaseDate = new Date(Date.UTC(2025, 11, 24));
   maxReleaseDate.setUTCHours(0, 0, 0, 0);
   const maxDaysUntilRelease = Math.ceil((maxReleaseDate - todayDate) / (1000 * 60 * 60 * 24));
   const chanceOfSilksongTomorrow = ((1 / maxDaysUntilRelease) * 100).toFixed(2);
@@ -1089,7 +1101,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <h1>Stats - ${formattedTodayDate}</h1>
 
       <h3>Release Predictions</h3>
-      <p>There's a maximum of <b>${maxDaysUntilRelease} days</b> until Silksong releases. (Max: 18 September 2025)</p>
+      <p>There's a maximum of <b>${maxDaysUntilRelease} days</b> until Silksong releases. (Max: 24 December 2025)</p>
       <p>That's approximately <b>${(maxDaysUntilRelease / 30.42).toFixed(2)} months</b>.</p>
       <p>The release window is about <b>${releaseWindowDays} days</b> long</p>
       <p><b>${releaseWindowRatio}%</b> of the release window has passed.</p>
