@@ -861,6 +861,20 @@ const newsArray = [
     number: "75",
   },
   {
+    date: "2025-08-18",
+    title:
+      "New images of the Gamescom booths begin to appear, and Geoff Keighley makes an cryptic tweet hinting at the Gamescom Opening Live",
+    images: ["img/76/print1.png", "img/76/print2.webp", "img/76/print3.webp"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/geoffkeighley/status/1957492830374650018">Geoff Keighley tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1mtmie2/another_shot_of_the_nintendo_booth_someones/">Reddit post about the Nintendo Booth</a></div>',
+      '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1mthxlg/silksong_xbox_booth_at_ganescom/">Reddit post about the Xbox Booth</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=3MhUX6Jbv6U">Daily Silksong News 1676 </a></div>',
+    ],
+    type: "Kinda",
+    number: "76",
+  },
+  {
     date: tomorrowDateString, // Gets YYYY-MM-DD
     title: "Tomorrow",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -868,7 +882,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "76",
+    number: "77",
   },
 ];
 
