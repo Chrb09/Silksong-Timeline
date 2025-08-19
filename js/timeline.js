@@ -874,6 +874,19 @@ const newsArray = [
     type: "Kinda",
     number: "76",
   },
+{
+    date: "2025-08-18",
+    title:
+      "The  official Team Cherry account tweets about an special Silksong announcement, premiering on their YouTube channel in 48 hours",
+    images: ["
+https://pbs.twimg.com/media/GyuMbmZacAIEyM8?format=jpg&name=large"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/TeamCherryGames/status/1957812884773433667?t=2EnT6RjSlXMWyWFMXBnOsg&s=19">Team Cherry tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="youtu.be/6XGeJwsUP9c">Silksong announcement premiere </a></div>',
+    ],
+    type: "Yes",
+    number: "77",
+  },
   {
     date: tomorrowDateString, // Gets YYYY-MM-DD
     title: "Tomorrow",
@@ -882,7 +895,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
     type: "Maybe",
-    number: "77",
+    number: "78",
   },
 ];
 
