@@ -344,3 +344,18 @@ h3 {
     border-radius: 0.5em;
   }
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--gray);
+    color: var(--white);
+  }
+  a {
+    color: var(--white);
+  }
+  .news::after {
+    outline-color: var(--gray);
+  }
+  .news:last-child::before {
+    background-color: var(--gray);
+  }
+}
