@@ -42,7 +42,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=96s">Daily Silksong News -702</a></div>',
     ],
     type: "Yes",
-    number: "1",
   },
   {
     date: "2019-02-15",
@@ -53,7 +52,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=137s">Daily Silksong News -701</a></div>',
     ],
     type: "Yes",
-    number: "2",
   },
   {
     date: "2019-02-16",
@@ -62,7 +60,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=155s">Daily Silksong News -700</a></div>',
     ],
     type: "Kinda",
-    number: "3",
   },
   {
     date: "2019-03-19",
@@ -74,7 +71,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=435s">Daily Silksong News -669</a></div>',
     ],
     type: "Yes",
-    number: "4",
   },
   {
     date: "2019-04-26",
@@ -83,7 +79,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=756s">Daily Silksong News -631</a></div>',
     ],
     type: "Maybe",
-    number: "5",
   },
   {
     date: "2019-06-11",
@@ -92,7 +87,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=1143s">Daily Silksong News -585</a></div>',
     ],
     type: "Yes",
-    number: "6",
   },
   {
     date: "2019-06-12",
@@ -106,7 +100,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=1169s">Daily Silksong News -584</a></div>',
     ],
     type: "Yes",
-    number: "7",
   },
   {
     date: "2019-06-13",
@@ -117,7 +110,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=1182s">Daily Silksong News -583</a></div>',
     ],
     type: "Yes",
-    number: "8",
   },
   {
     date: "2019-06-25",
@@ -129,7 +121,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=1307s">Daily Silksong News -571</a></div>',
     ],
     type: "Yes",
-    number: "9",
   },
   {
     date: "2019-09-18",
@@ -138,7 +129,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=1999s&pp=0gcJCTEAlc8ueATH">Daily Silksong News -485</a></div>',
     ],
     type: "Kinda",
-    number: "10",
   },
   {
     date: "2019-10-10",
@@ -150,7 +140,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=2159s">Daily Silksong News -464</a></div>',
     ],
     type: "Yes",
-    number: "11",
   },
   {
     date: "2019-10-28",
@@ -160,7 +149,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=2316s">Daily Silksong News -428</a></div>',
     ],
     type: "Kinda",
-    number: "12",
   },
   {
     date: "2019-12-13",
@@ -172,7 +160,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=2613s">Daily Silksong News -400</a></div>',
     ],
     type: "Yes",
-    number: "13",
   },
   {
     date: "2020-01-20",
@@ -181,7 +168,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=2924s">Daily Silksong News -356</a></div>',
     ],
     type: "Maybe",
-    number: "14",
   },
   {
     date: "2020-01-26",
@@ -190,7 +176,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=2980s">Daily Silksong News -356 (again?)</a></div>',
     ],
     type: "Maybe",
-    number: "15",
   },
   {
     date: "2020-01-31",
@@ -199,7 +184,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=3040s">Daily Silksong News -351 </a></div>',
     ],
     type: "Maybe",
-    number: "16",
   },
   {
     date: "2020-02-04",
@@ -208,7 +192,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=3086s">Daily Silksong News -347 </a></div>',
     ],
     type: "Maybe",
-    number: "17",
   },
   {
     date: "2020-04-02",
@@ -217,7 +200,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=3510s&pp=0gcJCTEAlc8ueATH">Daily Silksong News -289 </a></div>',
     ],
     type: "Maybe",
-    number: "18",
   },
   {
     date: "2020-06-15",
@@ -228,7 +210,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=4016s">Daily Silksong News -214 </a></div>',
     ],
     type: "Yes",
-    number: "19",
   },
   {
     date: "2020-06-22",
@@ -239,7 +220,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=4093s">Daily Silksong News -207 </a></div>',
     ],
     type: "Yes",
-    number: "20",
   },
   {
     date: "2020-06-29",
@@ -250,7 +230,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=4163s">Daily Silksong News -200 </a></div>',
     ],
     type: "Yes",
-    number: "21",
   },
   {
     date: "2020-07-05",
@@ -261,7 +240,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=4216s">Daily Silksong News -194 </a></div>',
     ],
     type: "Yes",
-    number: "22",
   },
   {
     date: "2020-08-21",
@@ -272,7 +250,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=4558s">Daily Silksong News -147 </a></div>',
     ],
     type: "Maybe",
-    number: "23",
   },
   {
     date: "2020-11-30",
@@ -283,7 +260,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=5131s">Daily Silksong News -46 </a></div>',
     ],
     type: "Kinda",
-    number: "24",
   },
   {
     date: "2020-12-13",
@@ -294,7 +270,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=5251s">Daily Silksong News -33 </a></div>',
     ],
     type: "Maybe",
-    number: "25",
   },
   {
     date: "2020-12-24",
@@ -304,7 +279,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=5330s">Daily Silksong News -22 </a></div>',
     ],
     type: "Yes",
-    number: "26",
   },
   {
     date: "2020-12-31",
@@ -315,7 +289,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Fi9I4Ve71Js&t=5397s">Daily Silksong News -15 </a></div>',
     ],
     type: "Yes",
-    number: "27",
   },
   {
     date: "2021-01-16",
@@ -325,13 +298,11 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=7SnMKTy_k1w">Daily Silksong News 1 </a></div>',
     ],
     type: "Other",
-    number: "28",
   },
   {
     date: "2021-09-14",
     title: "Nvidia leaks alleged release date of february fifteenth 2022 ",
     type: "Maybe",
-    number: "29",
   },
   {
     date: "2022-01-23",
@@ -341,7 +312,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=weR-Fprw6dQ">Daily Silksong News 373 </a></div>',
     ],
     type: "No, but",
-    number: "30",
   },
   {
     date: "2022-02-12",
@@ -351,7 +321,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Doib0u8KdjI">Daily Silksong News 393 </a></div>',
     ],
     type: "No, but",
-    number: "31",
   },
   {
     date: "2022-03-15",
@@ -362,7 +331,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=XnGASjuTTQw">Daily Silksong News 424 </a></div>',
     ],
     type: "Kinda",
-    number: "32",
   },
   {
     date: "2022-04-30",
@@ -373,7 +341,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=a0RWCOVWM78">Daily Silksong News 470 </a></div>',
     ],
     type: "Kinda",
-    number: "33",
   },
   {
     date: "2022-06-12",
@@ -384,7 +351,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=4oRMNZ_i2tI">Daily Silksong News 513 </a></div>',
     ],
     type: "Yes",
-    number: "34",
   },
   {
     date: "2022-06-13",
@@ -397,7 +363,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=h3OJro0ufxY">Daily Silksong News 514 </a></div>',
     ],
     type: "Kinda",
-    number: "35",
   },
   {
     date: "2022-06-14",
@@ -408,7 +373,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=oORVxMCLI28">Daily Silksong News 515 </a></div>',
     ],
     type: "Yes",
-    number: "36",
   },
   {
     date: "2022-06-16",
@@ -417,7 +381,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=rQYwf9acBrw">Daily Silksong News 517 </a></div>',
     ],
     type: "Kinda",
-    number: "37",
   },
   {
     date: "2022-09-16",
@@ -428,7 +391,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=lQU9AAU-MwE">Daily Silksong News 609 </a></div>',
     ],
     type: "Yes",
-    number: "38",
   },
   {
     date: "2022-09-17",
@@ -439,7 +401,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Rodsb_gAVCU">Daily Silksong News 610 </a></div>',
     ],
     type: "Yes",
-    number: "39",
   },
   {
     date: "2022-10-29",
@@ -450,7 +411,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=4yYBbbNlFxo">Daily Silksong News 652 </a></div>',
     ],
     type: "Kinda old",
-    number: "40",
   },
   {
     date: "2023-02-02",
@@ -459,7 +419,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Iyq0GW9KtDc">Daily Silksong News 748 </a></div>',
     ],
     type: "Maybe",
-    number: "41",
   },
   {
     date: "2023-05-10",
@@ -472,7 +431,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=dDacZ8u3Obk">Daily Silksong News 845 </a></div>',
     ],
     type: "Yes",
-    number: "42",
   },
   {
     date: "2023-06-29",
@@ -483,7 +441,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=5D9i9fX9SGE">Daily Silksong News 895 </a></div>',
     ],
     type: "Kinda",
-    number: "43",
   },
   {
     date: "2023-07-22",
@@ -492,7 +449,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=D9m-oBgr-bQ">Daily Silksong News 918 </a></div>',
     ],
     type: "Kinda",
-    number: "44",
   },
   {
     date: "2023-09-22",
@@ -502,7 +458,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=MXwgo-JHYPQ">Daily Silksong News 980 </a></div>',
     ],
     type: "Kinda",
-    number: "45",
   },
   {
     date: "2023-12-13",
@@ -512,7 +467,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=CduKctEyPKE">Daily Silksong News 1062 </a></div>',
     ],
     type: "Yes",
-    number: "46",
   },
   {
     date: "2024-03-17",
@@ -523,20 +477,17 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=ODnG4vjoOuE">Daily Silksong News 1158 </a></div>',
     ],
     type: "Kinda",
-    number: "47",
   },
   {
     date: "2024-04-02",
     title: "Silksong gets new Microsoft Store page",
     images: ["img/48/print.jpg"],
-    imagetype: "small",
     links: [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1774895893520466278">Leths tweet </a></div>',
       '<div class="linkDiv"><img src="img/logos/xbox.png" class="linkLogo"><a href="https://www.xbox.com/en-US/games/hollow-knight-silksong">Silksong Xbox page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=CbmtBrOSmlE">Daily Silksong News 1173 </a></div>',
     ],
     type: "Kinda",
-    number: "48",
   },
   {
     date: "2024-04-04",
@@ -546,7 +497,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=SBzSijb7_y8">Daily Silksong News 1175 </a></div>',
     ],
     type: "Maybe",
-    number: "49",
   },
   {
     date: "2024-06-07",
@@ -558,7 +508,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=ARpy-EhHDCs">Daily Silksong News 1238 </a></div>',
     ],
     type: "Maybe",
-    number: "50",
   },
   {
     date: "2025-01-16",
@@ -570,7 +519,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=FA9H3snFrSQ">Daily Silksong News 1462 </a></div>',
     ],
     type: "Maybe",
-    number: "51",
   },
   {
     date: "2025-01-18",
@@ -581,7 +529,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=O9NnGdrNZQE">Daily Silksong News 1462 </a></div>',
     ],
     type: "Maybe",
-    number: "52",
   },
   {
     date: "2025-01-23",
@@ -591,7 +538,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=EHJbRWBd3K4">Daily Silksong News 1469 </a></div>',
     ],
     type: "No",
-    number: "53",
   },
   {
     date: "2025-03-18",
@@ -602,7 +548,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=R56ol_rp18I">Daily Silksong News 1523 </a></div>',
     ],
     type: "Maybe",
-    number: "54",
   },
   {
     date: "2025-03-24",
@@ -615,7 +560,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=i9LY67e14Oo">Daily Silksong News 1529 </a></div>',
     ],
     type: "Kinda",
-    number: "55",
   },
   {
     date: "2025-04-02",
@@ -629,7 +573,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=J1M5rKEKN2Q">Daily Silksong News 1539 </a></div>',
     ],
     type: "Yes",
-    number: "56",
   },
   {
     date: "2025-04-07",
@@ -641,7 +584,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=ObCRErMU9e4">Daily Silksong News 1543 </a></div>',
     ],
     type: "Yes",
-    number: "57",
   },
   {
     date: "2025-04-08",
@@ -653,7 +595,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Sf1SgcVm6mk">Daily Silksong News 1544 </a></div>',
     ],
     type: "Kinda",
-    number: "58",
   },
   {
     date: "2025-04-09",
@@ -664,7 +605,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=panptEMYr2k">Daily Silksong News 1545 </a></div>',
     ],
     type: "No, but",
-    number: "59",
   },
   {
     date: "2025-04-18",
@@ -676,7 +616,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1913667736099590533">Leths tweet</a></div>',
     ],
     type: "No, but",
-    number: "60",
   },
   {
     date: "2025-04-28",
@@ -688,7 +627,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=UDQdwFY6UE8">Daily Silksong News 1565 </a></div>',
     ],
     type: "Kinda",
-    number: "61",
   },
   {
     date: "2025-04-29",
@@ -699,7 +637,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=UDQdwFY6UE8">Daily Silksong News 1565 </a></div>',
     ],
     type: "Kinda",
-    number: "62",
   },
   {
     date: "2025-04-30",
@@ -714,7 +651,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1kbr746/nintendo_is_sending_out_emails_confirming/">Reddit post </a></div>',
     ],
     type: "No, but",
-    number: "63",
   },
   {
     date: "2025-05-01",
@@ -725,7 +661,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=-ov5oaqoEr8">Daily Silksong News 1567 </a></div>',
     ],
     type: "Yes",
-    number: "64",
   },
   {
     date: "2025-05-17",
@@ -739,7 +674,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=C6jmX4LJuuQ">Daily Silksong News 1583 </a></div>',
     ],
     type: "Kinda",
-    number: "65",
   },
   {
     date: "2025-05-20",
@@ -750,7 +684,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Xij94fN1pnk">Daily Silksong News 1586 </a></div>',
     ],
     type: "No, but",
-    number: "66",
   },
   {
     date: "2025-06-03",
@@ -762,7 +695,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=2RF1Xnfg4dw">Daily Silksong News 1600</a></div>',
     ],
     type: "Kinda big",
-    number: "67",
   },
   {
     date: "2025-06-06",
@@ -774,7 +706,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=1_BbaVd5fjk">Daily Silksong News 1603 </a></div>',
     ],
     type: "Kinda",
-    number: "68",
   },
   {
     date: "2025-06-08",
@@ -786,7 +717,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=167tSGgDmW0">Daily Silksong News 1605 </a></div>',
     ],
     type: "Yes",
-    number: "69",
   },
   {
     date: "2025-06-10",
@@ -797,7 +727,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=-X3ZZ-x0IcI">Daily Silksong News 1607 </a></div>',
     ],
     type: "No, but",
-    number: "70",
   },
   {
     date: "2025-06-25",
@@ -808,7 +737,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=2wkwk-ORwdY">Daily Silksong News 1622 </a></div>',
     ],
     type: "No, but",
-    number: "71",
   },
   {
     date: "2025-06-30",
@@ -820,7 +748,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=VPJ5kUUbyVY">Daily Silksong News 1627 </a></div>',
     ],
     type: "Yes",
-    number: "72",
   },
   {
     date: "2025-07-03",
@@ -834,7 +761,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=z-XBjye-zsc">Daily Silksong News 1630 </a></div>',
     ],
     type: "Kinda",
-    number: "73",
   },
   {
     date: "2025-07-28",
@@ -846,7 +772,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=FLAbIf3Opf8">Daily Silksong News 1655 </a></div>',
     ],
     type: "Yes",
-    number: "74",
   },
   {
     date: "2025-08-07",
@@ -858,7 +783,6 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=rQrgqCrwqKA">Daily Silksong News 1665 </a></div>',
     ],
     type: "Yes",
-    number: "75",
   },
   {
     date: "2025-08-18",
@@ -872,21 +796,42 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=3MhUX6Jbv6U">Daily Silksong News 1676 </a></div>',
     ],
     type: "Kinda",
-    number: "76",
   },
-{
+  {
     date: "2025-08-19",
     title:
-      "The  official Team Cherry account tweets about an special Silksong announcement, premiering on their YouTube channel in 48 hours",
-    images: ["https://pbs.twimg.com/media/GyuMbmZacAIEyM8?format=jpg&name=large"],
+      "The  official Team Cherry account tweets about an special Silksong announcement, premiering on their YouTube channel in 48 hours, Silksong was also mentioned on the Gamescom opening night live, confirming a 2025 release again",
+    images: [
+      "https://pbs.twimg.com/media/GyuMbmZacAIEyM8?format=jpg&name=large",
+      "img/78/print1.png",
+      "img/78/print2.png",
+    ],
     links: [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/TeamCherryGames/status/1957812884773433667?t=2EnT6RjSlXMWyWFMXBnOsg&s=19">Team Cherry tweet</a></div>',
-            '<div class="linkDiv"><img src="img/logos/teamcherry.png" class="linkLogo"><a href="https://www.teamcherry.com.au/blog/11xf7azcuebhybgossfhdc0mphiqbs-en88t">Team Cherry blog post</a></div>',
+      '<div class="linkDiv"><img src="img/logos/teamcherry.png" class="linkLogo"><a href="https://www.teamcherry.com.au/blog/11xf7azcuebhybgossfhdc0mphiqbs-en88t">Team Cherry blog post</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=6XGeJwsUP9c">Silksong announcement premiere</a></div>',
- '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/imvNpWtuQbY">Emergency Silksong news</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/imvNpWtuQbY">Emergency Silksong news</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/JkjebOOXbX4?si=m9VUJerpLFLhxVI-">Daily Silksong News 1677 </a></div>',
     ],
     type: "Yes",
-    number: "77",
+  },
+  {
+    date: "2025-08-20",
+    title: "Silksong demo playable at the Xbox and Nintendo booths on Gamescom",
+    images: ["img/79/print1.png", "img/79/print2.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/BVB-dL88bUU?si=Y869NRjJI6F71s0n">Daily Silksong News 1678 </a></div>',
+    ],
+    type: "Yes",
+  },
+  {
+    date: "2025-08-21",
+    title: "Special Silksong announcement",
+    images: ["https://pbs.twimg.com/media/GyuMbmZacAIEyM8?format=jpg&name=large"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=6XGeJwsUP9c">Silksong announcement premiere</a></div>',
+    ],
+    type: "Yes",
   },
   {
     date: tomorrowDateString, // Gets YYYY-MM-DD
@@ -895,8 +840,7 @@ const newsArray = [
     links: [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
-    type: "Maybe",
-    number: "78",
+    type: "Tomorrow",
   },
 ];
 
@@ -915,8 +859,17 @@ const months = [
   "December",
 ];
 
+const lastDate = new Date(
+  Math.max.apply(
+    null,
+    newsArray.map(function (e) {
+      return new Date(e.date);
+    })
+  )
+);
+
 // Calculate days since reveal
-const daysSinceReveal = Math.ceil((tomorrowDate - revealDate) / (1000 * 60 * 60 * 24));
+const daysSinceReveal = Math.ceil((lastDate - revealDate) / (1000 * 60 * 60 * 24));
 
 // Creating the timeline
 for (let i = 0; i <= daysSinceReveal; i++) {
@@ -974,7 +927,8 @@ for (let i = 0; i <= daysSinceReveal; i++) {
       newsItem.type == "Kinda" ||
       newsItem.type == "Maybe" ||
       newsItem.type == "Kinda old" ||
-      newsItem.type == "Kinda big"
+      newsItem.type == "Kinda big" ||
+      newsItem.type == "Tomorrow"
     ) {
       dayDiv.classList.add("yellow");
     } else if (newsItem.type == "Other") {
@@ -982,10 +936,17 @@ for (let i = 0; i <= daysSinceReveal; i++) {
     }
 
     dayDiv.setAttribute("data-news", newsItem.type);
-    dayDiv.setAttribute("data-newsCount", newsItem.number);
+
+    const newsNumber = newsArray.findIndex((news) => news.date === currentDateString) + 1;
+    dayDiv.setAttribute("data-newsCount", newsNumber);
 
     let formattedDate = formatStringDate(newsItem.date);
-    dayDiv.innerHTML = `<div class="news-circle"></div> <b> ${formattedDate} </b> - ${newsItem.title}`;
+
+    if (newsItem.date === tomorrowDateString && newsItem.type !== "Tomorrow") {
+      dayDiv.innerHTML = `<div class="news-circle"></div> <b> ${formattedDate} </b> - ${newsItem.title} (Tomorrow)`;
+    } else {
+      dayDiv.innerHTML = `<div class="news-circle"></div> <b> ${formattedDate} </b> - ${newsItem.title}`;
+    }
 
     if (newsItem.images) {
       const imagesDiv = document.createElement("div");
@@ -1013,6 +974,12 @@ for (let i = 0; i <= daysSinceReveal; i++) {
         temp.innerHTML = linkHTML;
         linksDiv.appendChild(temp.firstChild);
       });
+      if (newsItem.date === tomorrowDateString && newsItem.type !== "Tomorrow") {
+        const temp = document.createElement("div");
+        temp.innerHTML =
+          '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>';
+        linksDiv.appendChild(temp.firstChild);
+      }
       dayDiv.appendChild(linksDiv);
     }
   }
