@@ -826,10 +826,11 @@ const newsArray = [
   },
   {
     date: "2025-08-21",
-    title: "Special Silksong announcement",
+    title: "The Silksong release date is revealed to be september 4 2025 at the Special Silksong announcement",
     images: ["https://pbs.twimg.com/media/GyuMbmZacAIEyM8?format=jpg&name=large"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=6XGeJwsUP9c">Silksong announcement premiere</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=6XGeJwsUP9c">Silksong announcement</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/WZmGBEm8XdM?si=qvgGtqe8xXu_K-K0">Daily Silksong News 1679 </a></div>',
     ],
     type: "Yes",
   },
@@ -1055,7 +1056,7 @@ last.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const maxReleaseDate = new Date(Date.UTC(2025, 9, 16)); // 16 October 2025
+  const maxReleaseDate = new Date(Date.UTC(2025, 8, 4)); // 4 September 2025
   maxReleaseDate.setUTCHours(0, 0, 0, 0);
   const maxDaysUntilRelease = Math.ceil((maxReleaseDate - todayDate) / (1000 * 60 * 60 * 24));
   const chanceOfSilksongTomorrow = ((1 / maxDaysUntilRelease) * 100).toFixed(2);
@@ -1107,13 +1108,9 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("stats").innerHTML = `
       <h1>Stats - ${formattedTodayDate}</h1>
 
-      <h3>Release Predictions</h3>
-      <p>There's a maximum of <b>${maxDaysUntilRelease} days</b> until Silksong releases. (Max: 16 October 2025)</p>
-      <p>That's approximately <b>${(maxDaysUntilRelease / 30.42).toFixed(2)} months</b>.</p>
-      <p>The release window is about <b>${releaseWindowDays} days</b> long</p>
+      <h3>Release Date</h3>
+      <p>There's <b>${maxDaysUntilRelease} days</b> until Silksong releases. (4 September 2025)</p>
       <p><b>${releaseWindowRatio}%</b> of the release window has passed.</p>
-      <p>There's a <b>${chanceOfSilksongTomorrow}%</b> that Silksong releases tomorrow.</p>
-      <p>There's a <b>${chanceOfSilksongNextMonth}%</b> that Silksong releases next month.</p>
 
       <h3>News Predictions</h3>
       <p>Silksong was revealed <b>${daysSinceRevealToday} days ago</b>.</p>
