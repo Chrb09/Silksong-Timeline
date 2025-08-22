@@ -541,7 +541,7 @@ const newsArray = [
     links: [
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=EHJbRWBd3K4">Daily Silksong News 1469 </a></div>',
     ],
-    type: "No",
+    type: "No, but",
   },
   {
     date: "2025-03-18",
@@ -1163,7 +1163,6 @@ document.addEventListener("DOMContentLoaded", function () {
       <p><b class="yellow">Kinda</b> -> ${typeCount.Kinda} times</p>
       <p><b class="yellow">Maybe</b> -> ${typeCount.Maybe} times</p>
       <p><b class="red">No, but</b> -> ${typeCount["No, but"]} times</p>
-      <p><b class="red">No</b> -> ${typeCount.No} times</p>
       <p><b class="yellow">Kinda big</b> -> ${typeCount["Kinda big"]} time</p>
       <p><b class="yellow">Kinda old</b> -> ${typeCount["Kinda old"]} time</p>
       <p><b class="blue">Other</b> -> ${typeCount.Other} time</p>
