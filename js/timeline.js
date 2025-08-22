@@ -845,7 +845,7 @@ const newsArray = [
     date: "2025-08-22",
     title:
       "The Silksong Steam page is completely updated including the updated art, trailer, screenshots and description",
-    images: ["img/81/print1.png", "img/81/print2.png"],
+    images: ["img/81/print1.png", "img/81/print2.png", "img/81/print3.png"],
     links: [
       '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
     ],
@@ -1150,7 +1150,6 @@ document.addEventListener("DOMContentLoaded", function () {
   } </b> news events.</p>
       <p>On average, we have had news every <b>${avgDaysBetweenNews} days.</b></p>
       <p>Any given day had a <b>${newsChance}%</b> chance of having news.</p>
-      <p>Last time we got news was on <b>${formatStringDate(lastNews.date)}</b>, "${lastNews.title}"</p>
 
       <h3>Comparisons</h3>
       <p>Hollow Knight took <b>${daysHollowKnightTook} days</b> to release after its reveal</p>
