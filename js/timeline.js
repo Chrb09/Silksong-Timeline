@@ -844,10 +844,13 @@ const newsArray = [
   {
     date: "2025-08-22",
     title:
-      "The Silksong Steam page is completely updated including the updated art, trailer, screenshots and description",
+      "The Silksong Steam page is completely updated, new screenshots are available on the GOG Silksong page, and the trading cards and badges have been uploaded to Steam.",
     images: ["img/81/print1.png", "img/81/print2.png", "img/81/print3.png"],
     links: [
       '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/gog.jpeg" class="linkLogo"><a href="https://www.gog.com/en/game/hollow_knight_silksong">Silksong GOG page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/steamdb.png" class="linkLogo"><a href="https://steamdb.info/app/1030300/communityitems/">SteamDB page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=u_h0ALfasmY">Daily Silksong News 1680 </a></div>',
     ],
     type: "Yes",
   },
