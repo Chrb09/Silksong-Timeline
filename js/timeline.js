@@ -3,6 +3,10 @@ const revealDate = new Date(Date.UTC(2019, 1, 14)); // Month starts from 0 in JS
 // Current date
 const todayDate = new Date();
 
+const silksongReleaseDate = new Date(Date.UTC(2025, 8, 4)); // 4 September 2025
+const daysUntilRelease = Math.ceil((silksongReleaseDate - todayDate) / (1000 * 60 * 60 * 24));
+silksongReleaseDate.setUTCHours(0, 0, 0, 0);
+
 // Reset hours to avoid timezone issues
 revealDate.setUTCHours(0, 0, 0, 0);
 todayDate.setUTCHours(0, 0, 0, 0);
@@ -827,21 +831,37 @@ const newsArray = [
   {
     date: "2025-08-21",
     title: "The Silksong release date is revealed to be september 4 2025 at the Special Silksong announcement",
-    images: ["https://pbs.twimg.com/media/GyuMbmZacAIEyM8?format=jpg&name=large"],
+    images: ["img/80/print1.jpg", "img/80/print2.png", "img/80/print3.png"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=6XGeJwsUP9c">Silksong announcement</a></div>',
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/TeamCherryGames/status/1958539409789423741">Team Cherry tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/teamcherry.png" class="linkLogo"><a href="https://www.teamcherry.com.au/blog/11xf7azcuebhybgossfhdc0mphiqbs-en88t-53h3w">Team Cherry blog post</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=6XGeJwsUP9c">Hollow Knight: Silksong - Release Trailer</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/WZmGBEm8XdM?si=qvgGtqe8xXu_K-K0">Daily Silksong News 1679 </a></div>',
     ],
     type: "Yes",
   },
   {
-    date: tomorrowDateString, // Gets YYYY-MM-DD
-    title: "Tomorrow",
+    date: todayDateString, // Gets YYYY-MM-DD
+    title: "Today (" + daysUntilRelease + " days until release)",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
     links: [
       '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
     ],
-    type: "Tomorrow",
+    type: "Today",
+  },
+  {
+    date: "2025-09-04",
+    title: "Silksong is released on all platforms",
+    images: ["img/81/print1.jpeg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/gog.jpeg" class="linkLogo"><a href="https://www.gog.com/en/game/hollow_knight_silksong">Silksong GOG page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/humblebundle.png" class="linkLogo"><a href="https://www.humblebundle.com/store/hollow-knight-silksong">Silksong Humble Bundle page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/xbox.png" class="linkLogo"><a href="https://www.xbox.com/en-US/games/hollow-knight-silksong">Silksong Xbox page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/psstore.png" class="linkLogo"><a href="https://store.playstation.com/pt-br/concept/10005908/">Silksong PlayStation Store page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/nintendoeshop.png" class="linkLogo"><a href="https://www.nintendo.com/us/store/products/hollow-knight-silksong-switch/">Silksong Nintendo eShop page</a></div>',
+    ],
+    type: "Yes",
   },
 ];
 
@@ -916,7 +936,14 @@ for (let i = 0; i <= daysSinceReveal; i++) {
   const dayDiv = document.createElement("div");
   dayDiv.classList.add("day");
   dayDiv.setAttribute("data-date", currentDateString);
-  dayDiv.setAttribute("data-sinceReveal", i);
+
+  if (currentDate > silksongReleaseDate) {
+    const daysSinceRelease = Math.ceil((currentDate - silksongReleaseDate) / (1000 * 60 * 60 * 24));
+    dayDiv.setAttribute("data-sinceRelease", daysSinceRelease);
+  } else {
+    dayDiv.setAttribute("data-sinceReveal", i);
+  }
+
   dayDiv.setAttribute("data-news", "No");
 
   if (newsItem) {
@@ -929,7 +956,8 @@ for (let i = 0; i <= daysSinceReveal; i++) {
       newsItem.type == "Maybe" ||
       newsItem.type == "Kinda old" ||
       newsItem.type == "Kinda big" ||
-      newsItem.type == "Tomorrow"
+      newsItem.type == "Tomorrow" ||
+      newsItem.type == "Today"
     ) {
       dayDiv.classList.add("yellow");
     } else if (newsItem.type == "Other") {
@@ -945,6 +973,9 @@ for (let i = 0; i <= daysSinceReveal; i++) {
 
     if (newsItem.date === tomorrowDateString && newsItem.type !== "Tomorrow") {
       dayDiv.innerHTML = `<div class="news-circle"></div> <b> ${formattedDate} </b> - ${newsItem.title} (Tomorrow)`;
+    }
+    if (newsItem.date === todayDateString && newsItem.type !== "Today") {
+      dayDiv.innerHTML = `<div class="news-circle"></div> <b> ${formattedDate} </b> - ${newsItem.title} (Today)`;
     } else {
       dayDiv.innerHTML = `<div class="news-circle"></div> <b> ${formattedDate} </b> - ${newsItem.title}`;
     }
@@ -975,7 +1006,7 @@ for (let i = 0; i <= daysSinceReveal; i++) {
         temp.innerHTML = linkHTML;
         linksDiv.appendChild(temp.firstChild);
       });
-      if (newsItem.date === tomorrowDateString && newsItem.type !== "Tomorrow") {
+      if (newsItem.date === todayDateString && newsItem.type !== "Today") {
         const temp = document.createElement("div");
         temp.innerHTML =
           '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>';
@@ -1010,7 +1041,11 @@ window.addEventListener("scroll", () => {
   if (closestDay) {
     // Get date from atribute
     const activeDate = closestDay.getAttribute("data-date");
-    daysSince.textContent = closestDay.getAttribute("data-sinceReveal") + " days since reveal";
+    if (closestDay.getAttribute("data-sinceRelease")) {
+      daysSince.textContent = closestDay.getAttribute("data-sinceRelease") + " days since release";
+    } else {
+      daysSince.textContent = closestDay.getAttribute("data-sinceReveal") + " days since reveal";
+    }
     newsStatus.textContent = closestDay.getAttribute("data-news");
     // Updates the display
     currentDay.textContent = formatStringDate(activeDate);
@@ -1056,38 +1091,25 @@ last.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const maxReleaseDate = new Date(Date.UTC(2025, 8, 4)); // 4 September 2025
-  maxReleaseDate.setUTCHours(0, 0, 0, 0);
-  const maxDaysUntilRelease = Math.ceil((maxReleaseDate - todayDate) / (1000 * 60 * 60 * 24));
-  const chanceOfSilksongTomorrow = ((1 / maxDaysUntilRelease) * 100).toFixed(2);
-  const chanceOfSilksongNextMonth = ((30 / maxDaysUntilRelease) * 100).toFixed(2);
-  const releaseWindowStartDate = new Date(Date.UTC(2025, 5, 6));
-  releaseWindowStartDate.setUTCHours(0, 0, 0, 0);
-  const releaseWindowDays = Math.ceil((maxReleaseDate - releaseWindowStartDate) / (1000 * 60 * 60 * 24));
-  const releaseWindowStartDateDays = Math.ceil((todayDate - releaseWindowStartDate) / (1000 * 60 * 60 * 24));
-  const releaseWindowRatio = ((releaseWindowStartDateDays / 365) * 100).toFixed(2);
+  const daysSinceRevealRelease = Math.ceil((silksongReleaseDate - revealDate) / (1000 * 60 * 60 * 24));
 
-  const daysSinceRevealToday = daysSinceReveal - 1;
   const actualNewsCount = newsDaysCount - 9;
   const formattedTodayDate = formatStringDate(todayDateString);
-  const avgDaysBetweenNews = Math.floor(daysSinceRevealToday / actualNewsCount);
-  const newsChance = ((actualNewsCount / daysSinceRevealToday) * 100).toFixed(2);
-  const lastNews = newsArray[newsDaysCount - 2];
+  const avgDaysBetweenNews = Math.floor(daysSinceRevealRelease / actualNewsCount);
+  const newsChance = ((actualNewsCount / daysSinceRevealRelease) * 100).toFixed(2);
+  const lastNews = newsArray[newsDaysCount - 3];
   const nextNewsDate = new Date(lastNews.date);
   nextNewsDate.setDate(nextNewsDate.getDate() + avgDaysBetweenNews);
-  const daysUntilNextNews = Math.ceil((nextNewsDate - todayDate) / (1000 * 60 * 60 * 24));
 
   const hollowknightRevealDate = new Date(Date.UTC(2014, 10, 15));
   hollowknightRevealDate.setUTCHours(0, 0, 0, 0);
   const hollowknightReleaseDate = new Date(Date.UTC(2017, 1, 24));
   hollowknightReleaseDate.setUTCHours(0, 0, 0, 0);
   const daysHollowKnightTook = Math.ceil((hollowknightReleaseDate - hollowknightRevealDate) / (1000 * 60 * 60 * 24));
-  const hollowKnightSilksongRatio = ((daysSinceRevealToday / daysHollowKnightTook) * 100).toFixed(2);
+  const hollowKnightSilksongRatio = ((daysSinceRevealRelease / daysHollowKnightTook) * 100).toFixed(2);
 
   const silksongReleaseWindowDate = new Date(Date.UTC(2022, 5, 13));
   silksongReleaseWindowDate.setUTCHours(0, 0, 0, 0);
-  const daysSinceSilksongReleaseWindow = Math.ceil((todayDate - silksongReleaseWindowDate) / (1000 * 60 * 60 * 24));
-  const silksongReleaseWindowRatio = ((daysSinceSilksongReleaseWindow / 365) * 100).toFixed(2);
 
   const typeCount = {};
 
@@ -1103,33 +1125,25 @@ document.addEventListener("DOMContentLoaded", function () {
     typeCount[news.type] = (typeCount[news.type] || 0) + 1;
   });
 
-  console.log(typeCount);
-
   document.getElementById("stats").innerHTML = `
-      <h1>Stats - ${formattedTodayDate}</h1>
+      <h1>Silksong Stats</h1>
 
       <h3>Release Date</h3>
-      <p>There's <b>${maxDaysUntilRelease} days</b> until Silksong releases. (4 September 2025)</p>
-      <p><b>${releaseWindowRatio}%</b> of the release window has passed.</p>
+      <p id="release-countdown"></p>
 
-      <h3>News Predictions</h3>
-      <p>Silksong was revealed <b>${daysSinceRevealToday} days ago</b>.</p>
-      <p>There has been news <b>${actualNewsCount} times</b> since then.</p>
+      <h3>News Stats</h3>
+      <p>Silksong was revealed <b>${daysSinceRevealRelease} days </b> before its release.</p>
+      <p>There has been news <b>${actualNewsCount} times</b>.</p>
       <p>The most active month for news is <b>${months[mostActiveMonth[0] - 1]}</b> with <b>${
     mostActiveMonth[1]
   } </b> news events.</p>
       <p>On average, we have had news every <b>${avgDaysBetweenNews} days.</b></p>
-      <p>Any given day has a <b>${newsChance}%</b> chance of having news.</p>
+      <p>Any given day had a <b>${newsChance}%</b> chance of having news.</p>
       <p>Last time we got news was on <b>${formatStringDate(lastNews.date)}</b>, "${lastNews.title}"</p>
-      <p>We were or will be due for news on <b>${formatStringDate(
-        nextNewsDate.toISOString().split("T")[0]
-      )}</b> (${daysUntilNextNews} days from now)</p>
 
       <h3>Comparisons</h3>
       <p>Hollow Knight took <b>${daysHollowKnightTook} days</b> to release after its reveal</p>
       <p>Silksong has taken roughly <b>${hollowKnightSilksongRatio}%</b> as long as Hollow Knight did.</p>
-      <p>The old one year Silksong release window started <b>${daysSinceSilksongReleaseWindow} days ago</b>.</p>
-      <p><b>${silksongReleaseWindowRatio}%</b> of that release window has passed.</p>
       
       <h3>News Types</h3>
       <p><b class="green">Yes</b> -> ${typeCount.Yes} times</p>
@@ -1141,6 +1155,31 @@ document.addEventListener("DOMContentLoaded", function () {
       <p><b class="yellow">Kinda old</b> -> ${typeCount["Kinda old"]} time</p>
       <p><b class="blue">Other</b> -> ${typeCount.Other} time</p>
   `;
+
+  const releaseDate = new Date("2025-09-04T10:00:00-05:00");
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = releaseDate - now;
+
+    if (diff <= 0) {
+      document.getElementById("release-countdown").innerHTML = "<b>Silksong has released!</b>";
+      clearInterval(timer);
+      return;
+    }
+
+    const daysUntilRelease = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hoursUntilRelease = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutesUntilRelease = Math.floor((diff / (1000 * 60)) % 60);
+    const secondsUntilRelease = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("release-countdown").innerHTML = `
+      There's <b>${daysUntilRelease}</b> days, <b>${hoursUntilRelease}</b> hours, <b>${minutesUntilRelease}</b> minutes, and <b>${secondsUntilRelease}</b> seconds until Silksong releases. (4 September 2025, 10:00 AM EST)
+    `;
+  }
+
+  const timer = setInterval(updateCountdown, 1000);
+  updateCountdown();
 });
 
 function formatStringDate(dateString) {
