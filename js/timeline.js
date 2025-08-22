@@ -830,13 +830,24 @@ const newsArray = [
   },
   {
     date: "2025-08-21",
-    title: "The Silksong release date is revealed to be september 4 2025 at the Special Silksong announcement",
+    title:
+      "The Silksong release date is revealed to be september 4 2025 at the Special Silksong announcement, some store pages have already updated",
     images: ["img/80/print1.jpg", "img/80/print2.png", "img/80/print3.png"],
     links: [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/TeamCherryGames/status/1958539409789423741">Team Cherry tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/teamcherry.png" class="linkLogo"><a href="https://www.teamcherry.com.au/blog/11xf7azcuebhybgossfhdc0mphiqbs-en88t-53h3w">Team Cherry blog post</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=6XGeJwsUP9c">Hollow Knight: Silksong - Release Trailer</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/WZmGBEm8XdM?si=qvgGtqe8xXu_K-K0">Daily Silksong News 1679 </a></div>',
+    ],
+    type: "Yes",
+  },
+  {
+    date: "2025-08-22",
+    title:
+      "The Silksong Steam page is completely updated including the updated art, trailer, screenshots and description",
+    images: ["img/81/print1.png", "img/81/print2.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
     ],
     type: "Yes",
   },
@@ -852,7 +863,7 @@ const newsArray = [
   {
     date: "2025-09-04",
     title: "Silksong is released on all platforms",
-    images: ["img/81/print1.jpeg"],
+    images: ["img/82/print1.jpeg"],
     links: [
       '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
       '<div class="linkDiv"><img src="img/logos/gog.jpeg" class="linkLogo"><a href="https://www.gog.com/en/game/hollow_knight_silksong">Silksong GOG page</a></div>',
@@ -1156,7 +1167,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <p><b class="blue">Other</b> -> ${typeCount.Other} time</p>
   `;
 
-  const releaseDate = new Date("2025-09-04T10:00:00-05:00");
+  const releaseDate = new Date("2025-09-04T09:00:00-05:00");
 
   function updateCountdown() {
     const now = new Date();
@@ -1174,7 +1185,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const secondsUntilRelease = Math.floor((diff / 1000) % 60);
 
     document.getElementById("release-countdown").innerHTML = `
-      There's <b>${daysUntilRelease}</b> days, <b>${hoursUntilRelease}</b> hours, <b>${minutesUntilRelease}</b> minutes, and <b>${secondsUntilRelease}</b> seconds until Silksong releases. (4 September 2025, 10:00 AM EST)
+      There's <b>${daysUntilRelease}</b> days, <b>${hoursUntilRelease}</b> hours, <b>${minutesUntilRelease}</b> minutes, and <b>${secondsUntilRelease}</b> seconds until Silksong releases. (4 September 2025, 09:00 AM EST)
     `;
   }
 
