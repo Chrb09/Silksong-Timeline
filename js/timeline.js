@@ -855,6 +855,28 @@ const newsArray = [
     type: "Yes",
   },
   {
+    date: "2025-08-24",
+    title: "Leth states that himself and the no eyes voice actress are back as VAs in Hollow Knight Silksong",
+    images: ["img/82/print1.png"],
+    imagetype: "small",
+    links: [
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=cs9QgQcBfh4">Daily Silksong News 1682 </a></div>',
+    ],
+    type: "No, but",
+  },
+  {
+    date: "2025-08-25",
+    title:
+      "The PlayStation store has been updated with an alternate Silksong release trailer with no text and 3s of new footage, Team Cherry also began to send out the backer surveys",
+    images: ["img/83/print4.png", "img/83/print1.png", "img/83/print2.png", "img/83/print3.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/psstore.png" class="linkLogo"><a href="https://store.playstation.com/pt-br/concept/10005908/">Silksong PlayStation Store page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/kickstarter.png" class="linkLogo"><a href="https://www.kickstarter.com/projects/11662585/hollow-knight/posts/4467168">Kickstarter update</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=DckeRj0VsiA">Daily Silksong News 1683 </a></div>',
+    ],
+    type: "Yes",
+  },
+  {
     date: todayDateString, // Gets YYYY-MM-DD
     title: "Today (" + daysUntilRelease + " days until release)",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -866,7 +888,7 @@ const newsArray = [
   {
     date: "2025-09-04",
     title: "Silksong is released on all platforms",
-    images: ["img/82/print1.jpeg"],
+    images: ["img/84/print1.jpeg"],
     links: [
       '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
       '<div class="linkDiv"><img src="img/logos/gog.jpeg" class="linkLogo"><a href="https://www.gog.com/en/game/hollow_knight_silksong">Silksong GOG page</a></div>',
