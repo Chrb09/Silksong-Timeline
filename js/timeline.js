@@ -401,7 +401,7 @@ const newsArray = [
     title: "New Silksong screenshots from the PlayStation Store",
     images: ["img/39/print.jpg"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/psstore.png" class="linkLogo"><a href="https://store.playstation.com/pt-br/concept/10005908/">Silksong PlayStation Store page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/psstore.png" class="linkLogo"><a href="https://store.playstation.com/en-us/concept/10005908">Silksong PlayStation Store page</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=Rodsb_gAVCU">Daily Silksong News 610 </a></div>',
     ],
     type: "Yes",
@@ -870,7 +870,7 @@ const newsArray = [
       "The PlayStation store has been updated with an alternate Silksong release trailer with no text and 3s of new footage, Team Cherry also began to send out the backer surveys",
     images: ["img/83/print4.png", "img/83/print1.png", "img/83/print2.png", "img/83/print3.png"],
     links: [
-      '<div class="linkDiv"><img src="img/logos/psstore.png" class="linkLogo"><a href="https://store.playstation.com/pt-br/concept/10005908/">Silksong PlayStation Store page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/psstore.png" class="linkLogo"><a href="https://store.playstation.com/en-us/concept/10005908">Silksong PlayStation Store page</a></div>',
       '<div class="linkDiv"><img src="img/logos/kickstarter.png" class="linkLogo"><a href="https://www.kickstarter.com/projects/11662585/hollow-knight/posts/4467168">Kickstarter update</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=DckeRj0VsiA">Daily Silksong News 1683 </a></div>',
     ],
@@ -894,7 +894,7 @@ const newsArray = [
       '<div class="linkDiv"><img src="img/logos/gog.jpeg" class="linkLogo"><a href="https://www.gog.com/en/game/hollow_knight_silksong">Silksong GOG page</a></div>',
       '<div class="linkDiv"><img src="img/logos/humblebundle.png" class="linkLogo"><a href="https://www.humblebundle.com/store/hollow-knight-silksong">Silksong Humble Bundle page</a></div>',
       '<div class="linkDiv"><img src="img/logos/xbox.png" class="linkLogo"><a href="https://www.xbox.com/en-US/games/hollow-knight-silksong">Silksong Xbox page</a></div>',
-      '<div class="linkDiv"><img src="img/logos/psstore.png" class="linkLogo"><a href="https://store.playstation.com/pt-br/concept/10005908/">Silksong PlayStation Store page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/psstore.png" class="linkLogo"><a href="https://store.playstation.com/en-us/concept/10005908">Silksong PlayStation Store page</a></div>',
       '<div class="linkDiv"><img src="img/logos/nintendoeshop.png" class="linkLogo"><a href="https://www.nintendo.com/us/store/products/hollow-knight-silksong-switch/">Silksong Nintendo eShop page</a></div>',
     ],
     type: "Yes",
