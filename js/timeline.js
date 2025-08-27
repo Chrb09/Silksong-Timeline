@@ -877,6 +877,18 @@ const newsArray = [
     type: "Yes",
   },
   {
+    date: "2025-08-27",
+    title:
+      "Some Silksong image files have been updated on Steam, this includes a new desktop client icon, the Silksong website also updated with some of the new Steam screenshots",
+    images: ["img/84/print1.png", "img/84/print2.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/teamcherry.png" class="linkLogo"><a href="https://hollowknightsilksong.com/">Silksong Website</a></div>',
+      '<div class="linkDiv"><img src="img/logos/steamdb.png" class="linkLogo"><a href="https://steamdb.info/app/1030300/history/">SteamDB page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=igUlq6LnNg4">Daily Silksong News 1685 </a></div>',
+    ],
+    type: "Kinda",
+  },
+  {
     date: todayDateString, // Gets YYYY-MM-DD
     title: "Today (" + daysUntilRelease + " days until release)",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -888,7 +900,7 @@ const newsArray = [
   {
     date: "2025-09-04",
     title: "Silksong is released on all platforms",
-    images: ["img/84/print1.jpeg"],
+    images: ["img/85/print1.jpeg"],
     links: [
       '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
       '<div class="linkDiv"><img src="img/logos/gog.jpeg" class="linkLogo"><a href="https://www.gog.com/en/game/hollow_knight_silksong">Silksong GOG page</a></div>',
