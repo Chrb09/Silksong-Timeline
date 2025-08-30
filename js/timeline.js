@@ -889,6 +889,27 @@ const newsArray = [
     type: "Kinda",
   },
   {
+    date: "2025-08-28",
+    title: "More Silksong screenshots uploaded to press kit with their file names",
+    images: ["img/85/print1.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/googledrive.png" class="linkLogo"><a href="https://drive.google.com/drive/folders/12-80w1sEwXid1gYvJI4BAJC2PhM05Idf">Silksong Presskit</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://youtu.be/irlnfCeX2JQ?si=sMEGMijTWjLwnbSh&t=340">Daily Silksong News 1686 </a></div>',
+    ],
+    type: "Kinda",
+  },
+  {
+    date: "2025-08-30",
+    title:
+      "Silksong price allegedly revealed by Gamestop, it was later said to be an expected price and subject to change",
+    images: ["img/86/print1.png", "img/86/print2.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/gamestop.png" class="linkLogo"><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbk84SU83YU1jYzRDOHZtdUpaWnBtVkw1Y0hDQXxBQ3Jtc0ttdGRUVHRnMW82NG5yQU54dlBpbkVVUU1nS1A1RURPMDl1TnRYZ2F1ejZldlRsM3FPZTh2UHR4eG5tVUdyaTIzUDQ1dTJfNmhpZ2VIS3RSTmdFSDlZeDhGV0owUFcxcWFTV1pPY05RY19WS1pYSG43OA&q=https%3A%2F%2Fwww.gamestop.com%2Fvideo-games%2Fnintendo-switch%2Fproducts%2Fhollow-knight-silksong---nintendo-switch%2F432032.html&v=OXyJf-ZJbSo">Silksong Gamestop page</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=OXyJf-ZJbSo">Daily Silksong News 1688 </a></div>',
+    ],
+    type: "Maybe",
+  },
+  {
     date: todayDateString, // Gets YYYY-MM-DD
     title: "Today (" + daysUntilRelease + " days until release)",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -900,7 +921,7 @@ const newsArray = [
   {
     date: "2025-09-04",
     title: "Silksong is released on all platforms",
-    images: ["img/85/print1.jpeg"],
+    images: ["img/87/print1.jpeg"],
     links: [
       '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
       '<div class="linkDiv"><img src="img/logos/gog.jpeg" class="linkLogo"><a href="https://www.gog.com/en/game/hollow_knight_silksong">Silksong GOG page</a></div>',
@@ -1141,7 +1162,7 @@ last.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", function () {
   const daysSinceRevealRelease = Math.ceil((silksongReleaseDate - revealDate) / (1000 * 60 * 60 * 24));
 
-  const actualNewsCount = newsDaysCount - 9;
+  const actualNewsCount = newsDaysCount - 12;
   const formattedTodayDate = formatStringDate(todayDateString);
   const avgDaysBetweenNews = Math.floor(daysSinceRevealRelease / actualNewsCount);
   const newsChance = ((actualNewsCount / daysSinceRevealRelease) * 100).toFixed(2);
