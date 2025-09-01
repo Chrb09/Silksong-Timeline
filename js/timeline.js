@@ -910,6 +910,17 @@ const newsArray = [
     type: "Maybe",
   },
   {
+    date: "2025-08-31",
+    title:
+      "Silksong price confirmed to be $20 and on a Team Cherry tweet, Leth also stated that there will be no pre-orders",
+    images: ["img/87/print1.png", "img/87/print2.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/TeamCherryGames/status/1962330350681735642">Team Cherry tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=lMItT1p7u8w">Daily Silksong News 1690 </a></div>',
+    ],
+    type: "Yes",
+  },
+  {
     date: todayDateString, // Gets YYYY-MM-DD
     title: "Today (" + daysUntilRelease + " days until release)",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -921,7 +932,7 @@ const newsArray = [
   {
     date: "2025-09-04",
     title: "Silksong is released on all platforms",
-    images: ["img/87/print1.jpeg"],
+    images: ["img/88/print1.jpeg"],
     links: [
       '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
       '<div class="linkDiv"><img src="img/logos/gog.jpeg" class="linkLogo"><a href="https://www.gog.com/en/game/hollow_knight_silksong">Silksong GOG page</a></div>',
