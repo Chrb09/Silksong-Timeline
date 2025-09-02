@@ -912,11 +912,23 @@ const newsArray = [
   {
     date: "2025-08-31",
     title:
-      "Silksong price confirmed to be $20 and on a Team Cherry tweet, Leth also stated that there will be no pre-orders",
+      "Silksong price confirmed to be $20 on a Team Cherry tweet, Leth also stated that there will be no pre-orders",
     images: ["img/87/print1.png", "img/87/print2.png"],
     links: [
       '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/TeamCherryGames/status/1962330350681735642">Team Cherry tweet</a></div>',
       '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=lMItT1p7u8w">Daily Silksong News 1690 </a></div>',
+    ],
+    type: "Yes",
+  },
+  {
+    date: "2025-09-02",
+    title:
+      "Silksong OST Price Revealed to be $12 on a Christopher Larkin tweet, there's also a new blog post on the Kickstarter",
+    images: ["img/88/print1.png", "img/88/print2.png"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/composerlarkin/status/1962724577538384231">Christopher Larkin tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/kickstarter.png" class="linkLogo"><a href="https://www.kickstarter.com/projects/11662585/hollow-knight/posts/4473863">Kickstarter update</a></div>',
+      '<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="https://www.youtube.com/watch?v=K4spPWf_Fxs">Daily Silksong News 1691 </a></div>',
     ],
     type: "Yes",
   },
@@ -932,7 +944,7 @@ const newsArray = [
   {
     date: "2025-09-04",
     title: "Silksong is released on all platforms",
-    images: ["img/88/print1.jpeg"],
+    images: ["img/89/print1.jpeg"],
     links: [
       '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
       '<div class="linkDiv"><img src="img/logos/gog.jpeg" class="linkLogo"><a href="https://www.gog.com/en/game/hollow_knight_silksong">Silksong GOG page</a></div>',
@@ -1174,7 +1186,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const daysSinceRevealRelease = Math.ceil((silksongReleaseDate - revealDate) / (1000 * 60 * 60 * 24));
 
   const actualNewsCount = newsDaysCount - 12;
-  const formattedTodayDate = formatStringDate(todayDateString);
   const avgDaysBetweenNews = Math.floor(daysSinceRevealRelease / actualNewsCount);
   const newsChance = ((actualNewsCount / daysSinceRevealRelease) * 100).toFixed(2);
   const lastNews = newsArray[newsDaysCount - 3];
