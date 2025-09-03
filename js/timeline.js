@@ -933,6 +933,17 @@ const newsArray = [
     type: "Yes",
   },
   {
+    date: "2025-09-03",
+    title: "Silksong confirmed to have Ultrawide support, OST confirmed to be 53 tracks long",
+    images: ["img/89/print1.png", "img/89/print2.jpeg"],
+    links: [
+      '<div class="linkDiv"><img src="img/logos/twitter.png" class="linkLogo"><a href="https://x.com/griffinmatta/status/1963104885722730672">Leth tweet</a></div>',
+      '<div class="linkDiv"><img src="img/logos/reddit.png" class="linkLogo"><a href="https://www.reddit.com/r/Silksong/comments/1n78e99/53_track_ost_confirmed/">Reddit post</a></div>',
+      //'<div class="linkDiv"><img src="img/logos/youtube.png" class="linkLogo"><a href="">Daily Silksong News 1692 </a></div>',
+    ],
+    type: "Yes",
+  },
+  {
     date: todayDateString, // Gets YYYY-MM-DD
     title: "Today (" + daysUntilRelease + " days until release)",
     // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
@@ -944,7 +955,7 @@ const newsArray = [
   {
     date: "2025-09-04",
     title: "Silksong is released on all platforms",
-    images: ["img/89/print1.jpeg"],
+    images: ["img/90/print1.jpeg"],
     links: [
       '<div class="linkDiv"><img src="img/logos/steam.png" class="linkLogo"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Silksong Steam page</a></div>',
       '<div class="linkDiv"><img src="img/logos/gog.jpeg" class="linkLogo"><a href="https://www.gog.com/en/game/hollow_knight_silksong">Silksong GOG page</a></div>',
@@ -1233,7 +1244,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       <h3>Comparisons</h3>
       <p>Hollow Knight took <b>${daysHollowKnightTook} days</b> to release after its reveal</p>
-      <p>Silksong has taken roughly <b>${hollowKnightSilksongRatio}%</b> as long as Hollow Knight did.</p>
+      <p>Silksong took roughly <b>${hollowKnightSilksongRatio}%</b> as long as Hollow Knight did.</p>
       
       <h3>News Types</h3>
       <p><b class="green">Yes</b> -> ${typeCount.Yes} times</p>
@@ -1245,7 +1256,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <p><b class="blue">Other</b> -> ${typeCount.Other} time</p>
   `;
 
-  const releaseDate = new Date("2025-09-04T09:00:00-05:00");
+  const releaseDate = new Date("2025-09-04T07:00:00-07:00");
 
   function updateCountdown() {
     const now = new Date();
@@ -1263,7 +1274,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const secondsUntilRelease = Math.floor((diff / 1000) % 60);
 
     document.getElementById("release-countdown").innerHTML = `
-      There's <b>${daysUntilRelease}</b> days, <b>${hoursUntilRelease}</b> hours, <b>${minutesUntilRelease}</b> minutes, and <b>${secondsUntilRelease}</b> seconds until Silksong releases. (4 September 2025, 09:00 AM EST)
+      There's <b>${daysUntilRelease}</b> days, <b>${hoursUntilRelease}</b> hours, <b>${minutesUntilRelease}</b> minutes, and <b>${secondsUntilRelease}</b> seconds until Silksong releases. (4 September 2025, 07:00 AM PT)
     `;
   }
 
