@@ -944,15 +944,6 @@ const newsArray = [
     type: "Yes",
   },
   {
-    date: todayDateString, // Gets YYYY-MM-DD
-    title: "Today (" + daysUntilRelease + " days until release)",
-    // images: ["img/tomorrow/" + (Math.floor(Math.random() * 3) + 1) + ".png"],
-    links: [
-      '<div class="linkDiv"><img src="img/logos/silksong.ico" class="linkLogo"><a href="https://issilksongout.com/">Is Silksong Out?</a></div>',
-    ],
-    type: "Today",
-  },
-  {
     date: "2025-09-04",
     title: "Silksong is released on all platforms",
     images: ["img/90/print1.jpeg"],
